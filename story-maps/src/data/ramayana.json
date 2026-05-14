@@ -1,0 +1,510 @@
+{
+  "book": "Ramayana",
+  "author": "Valmiki",
+  "centerCoordinates": { "lat": 20.5937, "lng": 78.9629 },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "mithila",
+      "name": "Mithila",
+      "storyRegion": "Mithila Kingdom",
+      "coordinates": { "lat": 26.7310, "lng": 85.9240 },
+      "importance": 1,
+      "modernName": "Janakpur, Nepal",
+      "modernInfo": "Birthplace of Sita. Janaki Mandir stands here today.",
+      "modernMapUrl": "https://maps.google.com/?q=Janakpur,Nepal",
+      "subPlaces": [
+        {
+          "id": "janaki_mandir",
+          "name": "Janaki Mandir",
+          "coordinates": { "lat": 26.7285, "lng": 85.9276 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "mithila_scene_1",
+              "sceneNumber": 1,
+              "title": "Sita's Swayamvar",
+              "description": "King Janaka declared that whoever strings the divine bow of Shiva shall marry his daughter Sita. Many kings failed before Ram lifted and broke the bow.",
+              "image": "/images/ramayana/mithila_swayamvar.jpg"
+            },
+            {
+              "id": "mithila_scene_2",
+              "sceneNumber": 2,
+              "title": "Ram and Sita's Wedding",
+              "description": "Ram and Sita were married here in a grand ceremony. His brothers also married Janaka's other daughters on the same day.",
+              "image": "/images/ramayana/mithila_wedding.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ayodhya",
+      "name": "Ayodhya",
+      "storyRegion": "Kosala Kingdom",
+      "coordinates": { "lat": 26.7922, "lng": 82.1998 },
+      "importance": 1,
+      "modernName": "Ayodhya, Uttar Pradesh",
+      "modernInfo": "Ram Mandir consecrated here in January 2024. One of the holiest cities in India.",
+      "modernMapUrl": "https://maps.google.com/?q=Ayodhya,UttarPradesh",
+      "subPlaces": [
+        {
+          "id": "ram_janmabhoomi",
+          "name": "Ram Janmabhoomi",
+          "coordinates": { "lat": 26.7953, "lng": 82.1943 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "ayodhya_scene_1",
+              "sceneNumber": 1,
+              "title": "Birth of Ram",
+              "description": "Ram was born here to King Dasharatha and Queen Kaushalya as the seventh avatar of Lord Vishnu.",
+              "image": "/images/ramayana/ayodhya_ram_birth.jpg"
+            }
+          ]
+        },
+        {
+          "id": "kaikeyi_palace",
+          "name": "Kaikeyi's Palace",
+          "coordinates": { "lat": 26.7960, "lng": 82.1960 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "ayodhya_scene_2",
+              "sceneNumber": 2,
+              "title": "The Two Boons",
+              "description": "Queen Kaikeyi demanded two boons from King Dasharatha — crown the prince Bharat as king and exile Ram to the forest for 14 years.",
+              "image": "/images/ramayana/ayodhya_two_boons.jpg"
+            }
+          ]
+        },
+        {
+          "id": "sarayu_bank",
+          "name": "Sarayu River Bank",
+          "coordinates": { "lat": 26.7800, "lng": 82.2050 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "ayodhya_scene_3",
+              "sceneNumber": 3,
+              "title": "Ram leaves for exile",
+              "description": "Ram, Sita, and Lakshman crossed the Sarayu River on a boat, beginning their 14 years of exile as the people of Ayodhya wept on the banks.",
+              "image": "/images/ramayana/ayodhya_exile_start.jpg"
+            },
+            {
+              "id": "ayodhya_scene_4",
+              "sceneNumber": 4,
+              "title": "Ram returns to Ayodhya",
+              "description": "After 14 years and defeating Ravana, Ram returned to Ayodhya. The city was lit with lamps — this day is celebrated as Diwali.",
+              "image": "/images/ramayana/ayodhya_return_diwali.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prayagraj",
+      "name": "Prayagraj",
+      "storyRegion": "Ganga Crossing",
+      "coordinates": { "lat": 25.4358, "lng": 81.8463 },
+      "importance": 2,
+      "modernName": "Prayagraj, Uttar Pradesh",
+      "modernInfo": "Confluence of Ganga, Yamuna and Saraswati rivers. Formerly called Allahabad.",
+      "modernMapUrl": "https://maps.google.com/?q=Prayagraj,UttarPradesh",
+      "subPlaces": [
+        {
+          "id": "bharadwaj_ashram",
+          "name": "Bharadwaj Ashram",
+          "coordinates": { "lat": 25.4200, "lng": 81.8850 },
+          "importance": 3,
+          "scenes": [
+            {
+              "id": "prayagraj_scene_1",
+              "sceneNumber": 1,
+              "title": "Crossing the Ganga",
+              "description": "Ram, Sita and Lakshman crossed the sacred Ganga river here and rested at Sage Bharadwaj's ashram before moving deeper into the forest.",
+              "image": "/images/ramayana/prayagraj_ganga_crossing.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chitrakoot",
+      "name": "Chitrakoot",
+      "storyRegion": "Chitrakoot Forest",
+      "coordinates": { "lat": 25.1803, "lng": 80.8674 },
+      "importance": 1,
+      "modernName": "Chitrakoot, Madhya Pradesh",
+      "modernInfo": "Sacred pilgrimage city on the Mandakini river. Home to Ramghat and many ancient temples.",
+      "modernMapUrl": "https://maps.google.com/?q=Chitrakoot,MadhyaPradesh",
+      "subPlaces": [
+        {
+          "id": "ramghat",
+          "name": "Ramghat",
+          "coordinates": { "lat": 25.1800, "lng": 80.8700 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "chitrakoot_scene_1",
+              "sceneNumber": 1,
+              "title": "Ram's hut on Mandakini",
+              "description": "Ram built a small hut near the banks of the Mandakini river. He, Sita and Lakshman lived peacefully here for years during their exile.",
+              "image": "/images/ramayana/chitrakoot_hut.jpg"
+            }
+          ]
+        },
+        {
+          "id": "bharat_milap",
+          "name": "Bharat Milap",
+          "coordinates": { "lat": 25.1850, "lng": 80.8750 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "chitrakoot_scene_2",
+              "sceneNumber": 2,
+              "title": "Bharat meets Ram",
+              "description": "Bharat came here to inform Ram of King Dasharatha's death and begged Ram to return. Ram refused and Bharat returned to Ayodhya with Ram's sandals to place on the throne.",
+              "image": "/images/ramayana/chitrakoot_bharat_milap.jpg"
+            }
+          ]
+        },
+        {
+          "id": "gupt_godavari",
+          "name": "Gupt Godavari Cave",
+          "coordinates": { "lat": 25.1780, "lng": 80.8620 },
+          "importance": 3,
+          "scenes": [
+            {
+              "id": "chitrakoot_scene_3",
+              "sceneNumber": 3,
+              "title": "Ram holds court in a cave",
+              "description": "Ram and Lakshman held court inside this cave during their time in Chitrakoot. The cave has an underground river flowing through it.",
+              "image": "/images/ramayana/chitrakoot_cave.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dandakaranya",
+      "name": "Dandakaranya",
+      "storyRegion": "Dandaka Forest",
+      "coordinates": { "lat": 20.2961, "lng": 81.8297 },
+      "importance": 2,
+      "modernName": "Chhattisgarh / Odisha / Andhra Pradesh forests",
+      "modernInfo": "A vast forest region covering parts of central India. Still heavily forested today.",
+      "modernMapUrl": "https://maps.google.com/?q=Dandakaranya+Forest",
+      "subPlaces": [
+        {
+          "id": "agastya_ashram",
+          "name": "Agastya Muni's Ashram",
+          "coordinates": { "lat": 20.2500, "lng": 81.8000 },
+          "importance": 3,
+          "scenes": [
+            {
+              "id": "dandaka_scene_1",
+              "sceneNumber": 1,
+              "title": "Meeting Sage Agastya",
+              "description": "Ram visited the great sage Agastya in the Dandaka forest. The sage gave Ram the divine bow and arrows of Brahma and Vishnu to fight the demons.",
+              "image": "/images/ramayana/dandaka_agastya.jpg"
+            }
+          ]
+        },
+        {
+          "id": "surpanakha_encounter",
+          "name": "Surpanakha Encounter",
+          "coordinates": { "lat": 20.3000, "lng": 81.8500 },
+          "importance": 3,
+          "scenes": [
+            {
+              "id": "dandaka_scene_2",
+              "sceneNumber": 2,
+              "title": "Surpanakha is insulted",
+              "description": "Ravana's sister Surpanakha approached Ram and Lakshman. When she attacked Sita, Lakshman cut off her nose. This triggered the chain of events leading to Sita's abduction.",
+              "image": "/images/ramayana/dandaka_surpanakha.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "panchavati",
+      "name": "Panchavati",
+      "storyRegion": "Panchavati on Godavari",
+      "coordinates": { "lat": 19.9975, "lng": 73.7898 },
+      "importance": 1,
+      "modernName": "Nashik, Maharashtra",
+      "modernInfo": "Sita Guha, Kalaram Temple and Ramkund are active pilgrimage sites here today.",
+      "modernMapUrl": "https://maps.google.com/?q=Nashik,Maharashtra",
+      "subPlaces": [
+        {
+          "id": "sita_guha",
+          "name": "Sita Guha",
+          "coordinates": { "lat": 19.9950, "lng": 73.7920 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "panchavati_scene_1",
+              "sceneNumber": 1,
+              "title": "Ram builds a home on Godavari",
+              "description": "Ram, Sita and Lakshman settled here by the Godavari river. Ram built a beautiful hut among five banyan trees — Panchavati means 'five banyan trees'.",
+              "image": "/images/ramayana/panchavati_hut.jpg"
+            }
+          ]
+        },
+        {
+          "id": "golden_deer_path",
+          "name": "The Golden Deer's Path",
+          "coordinates": { "lat": 19.9980, "lng": 73.7880 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "panchavati_scene_2",
+              "sceneNumber": 2,
+              "title": "The Golden Deer",
+              "description": "Sita was enchanted by a beautiful golden deer — actually Maricha the demon in disguise sent by Ravana. She asked Ram to capture it, luring him away from the hut.",
+              "image": "/images/ramayana/panchavati_golden_deer.jpg"
+            }
+          ]
+        },
+        {
+          "id": "lakshman_rekha",
+          "name": "Lakshman Rekha",
+          "coordinates": { "lat": 19.9960, "lng": 73.7910 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "panchavati_scene_3",
+              "sceneNumber": 3,
+              "title": "Sita abducted by Ravana",
+              "description": "Ravana came disguised as a sage. Sita crossed the protective line drawn by Lakshman. Ravana revealed himself, overpowered Sita and carried her away in his flying chariot Pushpaka.",
+              "image": "/images/ramayana/panchavati_sita_abduction.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kishkindha",
+      "name": "Kishkindha",
+      "storyRegion": "Kishkindha Kingdom",
+      "coordinates": { "lat": 15.3350, "lng": 76.4600 },
+      "importance": 1,
+      "modernName": "Hampi, Karnataka",
+      "modernInfo": "UNESCO World Heritage Site. Ruins of Vijayanagara Empire. Boulder-strewn landscape matches Valmiki's descriptions.",
+      "modernMapUrl": "https://maps.google.com/?q=Hampi,Karnataka",
+      "subPlaces": [
+        {
+          "id": "rishyamukha_hill",
+          "name": "Rishyamukha Hill",
+          "coordinates": { "lat": 15.3400, "lng": 76.4480 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "kishkindha_scene_1",
+              "sceneNumber": 1,
+              "title": "Ram meets Hanuman",
+              "description": "Hanuman appeared before Ram and Lakshman disguised as a brahmin near the Rishyamukha hill where Sugriva was hiding from Vali.",
+              "image": "/images/ramayana/kishkindha_ram_meets_hanuman.jpg"
+            },
+            {
+              "id": "kishkindha_scene_2",
+              "sceneNumber": 2,
+              "title": "Alliance with Sugriva",
+              "description": "Ram and Sugriva exchanged garlands around a sacred fire, pledging mutual help — Ram would kill Vali, Sugriva would help find Sita.",
+              "image": "/images/ramayana/kishkindha_alliance.jpg"
+            }
+          ]
+        },
+        {
+          "id": "vali_kishkindha",
+          "name": "Kishkindha Cave — Vali's Kingdom",
+          "coordinates": { "lat": 15.3350, "lng": 76.4620 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "kishkindha_scene_3",
+              "sceneNumber": 3,
+              "title": "Vali is defeated",
+              "description": "Ram shot Vali with an arrow from behind a tree as Vali fought Sugriva. Dying, Vali questioned Ram. Ram explained his reason, and Vali accepted it peacefully.",
+              "image": "/images/ramayana/kishkindha_vali_defeat.jpg"
+            },
+            {
+              "id": "kishkindha_scene_4",
+              "sceneNumber": 4,
+              "title": "Sugriva crowned king",
+              "description": "With Vali gone, Sugriva was crowned the king of Kishkindha. He fulfilled his promise and assembled the great Vanara army to search for Sita.",
+              "image": "/images/ramayana/kishkindha_sugriva_crowned.jpg"
+            }
+          ]
+        },
+        {
+          "id": "matanga_hill",
+          "name": "Matanga Hill — Shabari's Ashram",
+          "coordinates": { "lat": 15.3280, "lng": 76.4550 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "kishkindha_scene_5",
+              "sceneNumber": 5,
+              "title": "Shabari offers berries to Ram",
+              "description": "The devoted old woman Shabari had waited her entire life for Ram's arrival. She offered him berries, tasting each one first to make sure they were sweet — a symbol of pure devotion.",
+              "image": "/images/ramayana/kishkindha_shabari.jpg"
+            }
+          ]
+        },
+        {
+          "id": "pampa_lake",
+          "name": "Pampa Lake — Army Gathering",
+          "coordinates": { "lat": 15.3420, "lng": 76.4700 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "kishkindha_scene_6",
+              "sceneNumber": 6,
+              "title": "Vanara army assembled",
+              "description": "Millions of Vanaras gathered at the Pampa Lake before marching south to search for Sita in all four directions of the world.",
+              "image": "/images/ramayana/kishkindha_army_assembled.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rameshwaram",
+      "name": "Rameshwaram",
+      "storyRegion": "Southern Shore",
+      "coordinates": { "lat": 9.2876, "lng": 79.3129 },
+      "importance": 1,
+      "modernName": "Rameshwaram, Tamil Nadu",
+      "modernInfo": "One of the 12 Jyotirlinga shrines. Ramanathaswamy Temple has the longest corridor in India.",
+      "modernMapUrl": "https://maps.google.com/?q=Rameshwaram,TamilNadu",
+      "subPlaces": [
+        {
+          "id": "gandhamadhana",
+          "name": "Gandhamadhana Parvatham",
+          "coordinates": { "lat": 9.2950, "lng": 79.3200 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "rameshwaram_scene_1",
+              "sceneNumber": 1,
+              "title": "Ram surveys the ocean",
+              "description": "Ram climbed this hillock and surveyed the vast ocean separating India from Lanka. He prayed to the ocean god Varuna for three days to allow safe passage.",
+              "image": "/images/ramayana/rameshwaram_ram_surveys.jpg"
+            }
+          ]
+        },
+        {
+          "id": "ram_setu_start",
+          "name": "Ram Setu — Bridge Starting Point",
+          "coordinates": { "lat": 9.1766, "lng": 79.4130 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "rameshwaram_scene_2",
+              "sceneNumber": 2,
+              "title": "Building the bridge to Lanka",
+              "description": "Engineer Nala and the Vanara army built a floating bridge of stones across the sea to Lanka. The stones floated because Ram's name was written on them. NASA satellite images show this formation today.",
+              "image": "/images/ramayana/rameshwaram_bridge_built.jpg"
+            }
+          ]
+        },
+        {
+          "id": "ramanathaswamy",
+          "name": "Ramanathaswamy Temple",
+          "coordinates": { "lat": 9.2882, "lng": 79.3174 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "rameshwaram_scene_3",
+              "sceneNumber": 3,
+              "title": "Ram worships Shiva",
+              "description": "After defeating Ravana, Ram returned here and installed a Shiva lingam to seek forgiveness for killing Ravana — a great Shiva devotee. This temple stands here to this day.",
+              "image": "/images/ramayana/rameshwaram_shiva_temple.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lanka",
+      "name": "Lanka",
+      "storyRegion": "Ravana's Kingdom",
+      "coordinates": { "lat": 7.8731, "lng": 80.7718 },
+      "importance": 1,
+      "modernName": "Sri Lanka",
+      "modernInfo": "Sri Lanka government promotes an official Ramayana Trail tourism circuit. Sita Eliya and Ashoka Vatika are active sites.",
+      "modernMapUrl": "https://maps.google.com/?q=SriLanka",
+      "subPlaces": [
+        {
+          "id": "ashoka_vatika",
+          "name": "Ashoka Vatika",
+          "coordinates": { "lat": 6.9497, "lng": 80.7891 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "lanka_scene_1",
+              "sceneNumber": 1,
+              "title": "Sita held captive",
+              "description": "Ravana kept Sita in the beautiful Ashoka garden under guard of female demons. He tried to persuade her to marry him but she refused, holding a blade of grass between them.",
+              "image": "/images/ramayana/lanka_sita_captive.jpg"
+            },
+            {
+              "id": "lanka_scene_2",
+              "sceneNumber": 2,
+              "title": "Hanuman finds Sita",
+              "description": "Hanuman leaped across the ocean to Lanka, found Sita in Ashoka Vatika, and presented Ram's ring to her as proof. He was then captured and brought before Ravana.",
+              "image": "/images/ramayana/lanka_hanuman_finds_sita.jpg"
+            }
+          ]
+        },
+        {
+          "id": "lanka_burning",
+          "name": "Lanka — Hanuman Burns the City",
+          "coordinates": { "lat": 7.8600, "lng": 80.7500 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "lanka_scene_3",
+              "sceneNumber": 3,
+              "title": "Hanuman burns Lanka",
+              "description": "Ravana ordered Hanuman's tail to be set on fire. Hanuman used this to leap from building to building, burning Lanka with his own blazing tail before leaping back to India.",
+              "image": "/images/ramayana/lanka_hanuman_burns.jpg"
+            }
+          ]
+        },
+        {
+          "id": "lanka_battlefield",
+          "name": "Lanka Battlefield",
+          "coordinates": { "lat": 8.0000, "lng": 80.8000 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "lanka_scene_4",
+              "sceneNumber": 4,
+              "title": "The Great Battle",
+              "description": "The Vanara army crossed the bridge and fought Ravana's demon army. Great warriors fell on both sides. Lakshman was struck unconscious and Hanuman flew to the Himalayas to bring the Sanjeevani herb.",
+              "image": "/images/ramayana/lanka_great_battle.jpg"
+            },
+            {
+              "id": "lanka_scene_5",
+              "sceneNumber": 5,
+              "title": "Ravana is defeated",
+              "description": "After a fierce battle, Ram used the Brahmastra arrow given by Sage Agastya to kill Ravana. The 10-headed demon king fell, ending his reign of terror.",
+              "image": "/images/ramayana/lanka_ravana_defeated.jpg"
+            },
+            {
+              "id": "lanka_scene_6",
+              "sceneNumber": 6,
+              "title": "Sita's Agni Pariksha",
+              "description": "To prove her purity, Sita walked through fire. The fire god Agni himself rose from the flames holding Sita unharmed, declaring her pure to the world.",
+              "image": "/images/ramayana/lanka_agni_pariksha.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

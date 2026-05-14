@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+# StoryMaps 🗺️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> An interactive map that brings ancient Indian scriptures (Ramayana, Mahabharata) to life by showing WHERE events happened on a real map.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Quick Start
 
-### `npm start`
+```bash
+npx create-react-app story-maps
+cd story-maps
+npm install @react-google-maps/api lucide-react
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Then **replace** the `src/` folder with the files from this repo.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+cp .env.example .env
+# Add your Google Maps API key in .env
+npm start
+```
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Team
 
-### `npm run build`
+| Member | Role |
+|--------|------|
+| Member 1 (Nandini) | Frontend — All screens, components, routing, styles |
+| Member 2 (Pranav) | Data — JSON files, images |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Member 2 Instructions (Pranav)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Add your JSON data:
+- `src/data/ramayana.json` — expand with more places
+- `src/data/mahabharata.json` — add all major + sub-places
 
-### `npm run eject`
+### Add images:
+```
+public/images/
+  ramayana/
+    ayodhya_ram_birth.jpg
+    ayodhya_exile_crossing.jpg
+    ...
+  mahabharata/
+    ...
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### JSON Schema (for each place's scene):
+```json
+{
+  "id": "unique_id",
+  "sceneNumber": 1,
+  "title": "Scene title",
+  "description": "2-3 sentences about what happened",
+  "image": "/images/ramayana/filename.jpg",
+  "subPlaceId": "parent_subplace_id"
+}
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## App Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+Screen 1: BookSelector    → Choose Ramayana / Mahabharata
+Screen 2: MapView         → India map with story nodes
+Screen 3: StoryMap        → Zoomed place + scene strip
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## GitHub Workflow
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+# Init
+git init
+git remote add origin https://github.com/YOUR_USERNAME/story-maps.git
+git add .
+git commit -m "feat: initial project scaffold (Member 1 frontend)"
+git push -u origin main
 
-### Code Splitting
+# Pranav adds data
+git checkout -b pranav/data
+# ... add JSON and images ...
+git push origin pranav/data
+# Create PR → merge to main
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Environment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+REACT_APP_GOOGLE_MAPS_KEY=your_key_here
+```
 
-### Making a Progressive Web App
+Enable in Google Cloud Console:
+- Maps JavaScript API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*Hackathon project — 9 hours. Good luck! 🚀*

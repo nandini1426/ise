@@ -1,0 +1,163 @@
+{
+  "id": "mahabharata",
+  "book": "Mahabharata",
+  "centerCoordinates": { "lat": 28.0, "lng": 77.5 },
+  "defaultZoom": 5,
+  "totalMajor": 4,
+  "totalMinor": 8,
+  "description": "The epic war between the Pandavas and Kauravas — Dharma vs Adharma",
+  "places": [
+    {
+      "id": "hastinapur",
+      "name": "Hastinapur",
+      "storyRegion": "Kuru Kingdom",
+      "coordinates": { "lat": 29.1692, "lng": 78.0210 },
+      "importance": 1,
+      "modernName": "Meerut district, Uttar Pradesh",
+      "modernInfo": "Capital of the Kuru dynasty. Archaeological remains found near Meerut.",
+      "mapsUrl": "https://maps.google.com/?q=Hastinapur,Uttar+Pradesh",
+      "subPlaces": [
+        {
+          "id": "kuru_palace",
+          "name": "Kuru Royal Palace",
+          "coordinates": { "lat": 29.1750, "lng": 78.0300 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "hastinapur_s1",
+              "sceneNumber": 1,
+              "title": "Dice game of deception",
+              "description": "Shakuni rigged the dice game causing Pandavas to lose their kingdom and Draupadi's humiliation",
+              "image": null,
+              "subPlaceId": "kuru_palace"
+            },
+            {
+              "id": "hastinapur_s2",
+              "sceneNumber": 2,
+              "title": "Pandavas exiled",
+              "description": "After losing everything, the Pandavas were sent to 12 years of forest exile followed by 1 year incognito",
+              "image": null,
+              "subPlaceId": "kuru_palace"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "indraprastha",
+      "name": "Indraprastha",
+      "storyRegion": "Pandava Kingdom",
+      "coordinates": { "lat": 28.6139, "lng": 77.2090 },
+      "importance": 1,
+      "modernName": "Delhi",
+      "modernInfo": "Capital city of modern India. Purana Qila (Old Fort) stands at ancient Indraprastha site.",
+      "mapsUrl": "https://maps.google.com/?q=Purana+Qila,Delhi",
+      "subPlaces": [
+        {
+          "id": "maya_sabha",
+          "name": "Maya Sabha",
+          "coordinates": { "lat": 28.6200, "lng": 77.2150 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "indraprastha_s1",
+              "sceneNumber": 1,
+              "title": "The palace of illusions",
+              "description": "The demon architect Maya built a palace of illusions for Pandavas where water looked like ground and ground like water",
+              "image": null,
+              "subPlaceId": "maya_sabha"
+            },
+            {
+              "id": "indraprastha_s2",
+              "sceneNumber": 2,
+              "title": "Duryodhana humiliated",
+              "description": "Duryodhana fell into the pool thinking it was solid ground. Draupadi laughed, planting seeds of war",
+              "image": null,
+              "subPlaceId": "maya_sabha"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kurukshetra",
+      "name": "Kurukshetra",
+      "storyRegion": "Dharmakshetra",
+      "coordinates": { "lat": 29.9642, "lng": 76.8178 },
+      "importance": 1,
+      "modernName": "Kurukshetra, Haryana",
+      "modernInfo": "Brahma Sarovar here. The Bhagavad Gita was spoken here. Now a major pilgrimage city.",
+      "mapsUrl": "https://maps.google.com/?q=Kurukshetra,Haryana",
+      "subPlaces": [
+        {
+          "id": "arjuna_gita_spot",
+          "name": "Jyotisar — Gita Upadesh Site",
+          "coordinates": { "lat": 29.9750, "lng": 76.8100 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "kurukshetra_s1",
+              "sceneNumber": 1,
+              "title": "Arjuna's despair",
+              "description": "Arjuna saw his relatives and teachers across the battlefield and collapsed, refusing to fight",
+              "image": null,
+              "subPlaceId": "arjuna_gita_spot"
+            },
+            {
+              "id": "kurukshetra_s2",
+              "sceneNumber": 2,
+              "title": "Krishna speaks the Gita",
+              "description": "Lord Krishna revealed the Bhagavad Gita — 700 verses on duty, karma, and the eternal soul",
+              "image": null,
+              "subPlaceId": "arjuna_gita_spot"
+            },
+            {
+              "id": "kurukshetra_s3",
+              "sceneNumber": 3,
+              "title": "18 days of war",
+              "description": "The Mahabharata war lasted 18 days. Entire armies fell. Only 11 survivors remained on both sides",
+              "image": null,
+              "subPlaceId": "arjuna_gita_spot"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dwarka",
+      "name": "Dwarka",
+      "storyRegion": "Yadava Kingdom",
+      "coordinates": { "lat": 22.2442, "lng": 68.9685 },
+      "importance": 1,
+      "modernName": "Dwarka, Gujarat",
+      "modernInfo": "One of the Char Dham sites. Underwater structures found in the Gulf of Kutch matching Dwarka descriptions.",
+      "mapsUrl": "https://maps.google.com/?q=Dwarka,Gujarat",
+      "subPlaces": [
+        {
+          "id": "krishna_palace",
+          "name": "Krishna's Golden City",
+          "coordinates": { "lat": 22.2500, "lng": 68.9700 },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "dwarka_s1",
+              "sceneNumber": 1,
+              "title": "City built in the sea",
+              "description": "Vishwakarma built the divine city of Dwarka overnight. 12 yojanas of land reclaimed from the ocean for Krishna",
+              "image": null,
+              "subPlaceId": "krishna_palace"
+            },
+            {
+              "id": "dwarka_s2",
+              "sceneNumber": 2,
+              "title": "Dwarka submerged",
+              "description": "36 years after the war, Krishna departed. The ocean claimed Dwarka back as he had predicted",
+              "image": null,
+              "subPlaceId": "krishna_palace"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
