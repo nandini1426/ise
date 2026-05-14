@@ -1,0 +1,53 @@
+{
+  "id": "vamana_purana",
+  "book": "Vamana Purana",
+  "centerCoordinates": {
+    "lat": 10.5,
+    "lng": 76.5
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "thrikkakara",
+      "name": "Thrikkakara",
+      "storyRegion": "Mahabali's Kingdom \u2014 Kerala",
+      "coordinates": {
+        "lat": 10.0261,
+        "lng": 76.3327
+      },
+      "importance": 1,
+      "modernName": "Thrikkakara, Kochi, Kerala",
+      "modernInfo": "The only temple where Vamana is the main deity. The origin of Onam festival. Mahabali is said to return here every year during Onam.",
+      "modernMapUrl": "https://maps.google.com/?q=Thrikkakara+Temple,Kochi",
+      "subPlaces": [
+        {
+          "id": "thrikkakara_temple",
+          "name": "Vamana Temple",
+          "coordinates": {
+            "lat": 10.0261,
+            "lng": 76.3327
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "vamana_s1",
+              "sceneNumber": 1,
+              "title": "The dwarf asks for three paces of land",
+              "description": "King Mahabali's generosity was so great he had conquered the three worlds. Vishnu came as a dwarf brahmin boy and asked for 'just three paces of land'. Mahabali laughed and agreed. The dwarf expanded to cosmic size.",
+              "image": "/images/vamana_purana/vamana_request.jpg",
+              "subPlaceId": "thrikkakara_temple"
+            },
+            {
+              "id": "vamana_s2",
+              "sceneNumber": 2,
+              "title": "Vamana measures the universe",
+              "description": "With the first step Vamana covered the Earth. With the second step he covered the heavens. There was nowhere left for the third step. Mahabali offered his own head \u2014 and was pushed to the underworld. But Vishnu granted him the right to return to Kerala every year: that day is Onam.",
+              "image": "/images/vamana_purana/vamana_onam.jpg",
+              "subPlaceId": "thrikkakara_temple"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

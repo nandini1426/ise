@@ -1,0 +1,53 @@
+{
+  "id": "brahmanda_purana",
+  "book": "Brahmanda Purana",
+  "centerCoordinates": {
+    "lat": 17.4,
+    "lng": 78.5
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "lepakshi",
+      "name": "Lepakshi \u2014 Veerabhadra Temple",
+      "storyRegion": "Cosmic Geography",
+      "coordinates": {
+        "lat": 13.7983,
+        "lng": 77.6089
+      },
+      "importance": 1,
+      "modernName": "Lepakshi, Andhra Pradesh",
+      "modernInfo": "16th century temple with India's largest Nandi bull. The famous hanging pillar defies gravity. Vijayanagara architecture.",
+      "modernMapUrl": "https://maps.google.com/?q=Lepakshi+Temple,AndhraPradesh",
+      "subPlaces": [
+        {
+          "id": "lepakshi_temple",
+          "name": "Veerabhadra Temple",
+          "coordinates": {
+            "lat": 13.7983,
+            "lng": 77.6089
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "lepakshi_s1",
+              "sceneNumber": 1,
+              "title": "The Brahmanda \u2014 cosmic egg",
+              "description": "The Brahmanda Purana describes the universe as a cosmic egg (Brahmanda) floating in infinite space. Within it are seven continents, seven oceans, the Milky Way and countless universes \u2014 all contained within Brahma's single breath.",
+              "image": "/images/brahmanda_purana/brahmanda_cosmos.jpg",
+              "subPlaceId": "lepakshi_temple"
+            },
+            {
+              "id": "lepakshi_s2",
+              "sceneNumber": 2,
+              "title": "Jatayu falls at Lepakshi",
+              "description": "The Brahmanda Purana places Jatayu's fall at Lepakshi. When the wounded eagle fell after fighting Ravana, Ram cradled him here. 'Le Pakshi' means 'Rise, O Bird' in Telugu \u2014 the words Ram spoke to the dying Jatayu.",
+              "image": "/images/brahmanda_purana/lepakshi_jatayu.jpg",
+              "subPlaceId": "lepakshi_temple"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

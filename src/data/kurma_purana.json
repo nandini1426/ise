@@ -1,0 +1,53 @@
+{
+  "id": "kurma_purana",
+  "book": "Kurma Purana",
+  "centerCoordinates": {
+    "lat": 21.0,
+    "lng": 78.0
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "kurma_tirtha",
+      "name": "Srikakulam \u2014 Kurma Temple",
+      "storyRegion": "Churning Ocean Coast",
+      "coordinates": {
+        "lat": 18.2949,
+        "lng": 84.0049
+      },
+      "importance": 1,
+      "modernName": "Srikakulam, Andhra Pradesh",
+      "modernInfo": "Only Kurma (tortoise) avatar temple in India. Vishnu took Kurma form and the temple sits on his cosmic form.",
+      "modernMapUrl": "https://maps.google.com/?q=Kurma+Temple+Srikakulam,AndhraPradesh",
+      "subPlaces": [
+        {
+          "id": "kurma_temple",
+          "name": "Kurma Temple",
+          "coordinates": {
+            "lat": 18.2949,
+            "lng": 84.0049
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "kurma_s1",
+              "sceneNumber": 1,
+              "title": "Vishnu becomes the cosmic tortoise",
+              "description": "When gods and demons churned the cosmic ocean (Samudra Manthan) using Mount Mandara as a churning rod, the mountain began to sink. Vishnu took the form of a massive tortoise and placed the mountain on his back \u2014 holding up the world so the churning could continue.",
+              "image": "/images/kurma_purana/kurma_manthan.jpg",
+              "subPlaceId": "kurma_temple"
+            },
+            {
+              "id": "kurma_s2",
+              "sceneNumber": 2,
+              "title": "14 treasures emerge from the ocean",
+              "description": "From the churning emerged 14 divine treasures: Lakshmi, the goddess of wealth; Dhanvantari with amrita (nectar); the divine elephant Airavata; the wish-fulfilling tree Kalpavriksha; and the deadly poison Halahala that only Shiva could swallow.",
+              "image": "/images/kurma_purana/kurma_ratnas.jpg",
+              "subPlaceId": "kurma_temple"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

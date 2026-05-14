@@ -1,0 +1,87 @@
+{
+  "id": "brahma_purana",
+  "book": "Brahma Purana",
+  "centerCoordinates": {
+    "lat": 22.0,
+    "lng": 76.0
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "pushkar",
+      "name": "Pushkar",
+      "storyRegion": "Brahma's Sacred Lake",
+      "coordinates": {
+        "lat": 26.4899,
+        "lng": 74.5515
+      },
+      "importance": 1,
+      "modernName": "Pushkar, Rajasthan",
+      "modernInfo": "Only Brahma temple in the world. Pushkar Lake is one of 5 sacred lakes. Camel fair held every November.",
+      "modernMapUrl": "https://maps.google.com/?q=Brahma+Temple,Pushkar",
+      "subPlaces": [
+        {
+          "id": "brahma_temple",
+          "name": "Brahma Temple",
+          "coordinates": {
+            "lat": 26.49,
+            "lng": 74.5517
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "pushkar_s1",
+              "sceneNumber": 1,
+              "title": "Brahma's lotus creates the world",
+              "description": "Brahma dropped a lotus flower from his hand while searching for a place to perform the Pushkar yajna. It fell here and the lake appeared instantly \u2014 Pushkar means 'lotus lake'.",
+              "image": "/images/brahma_purana/pushkar_lotus.jpg",
+              "subPlaceId": "brahma_temple"
+            },
+            {
+              "id": "pushkar_s2",
+              "sceneNumber": 2,
+              "title": "Why there is only one Brahma temple",
+              "description": "Brahma's wife Savitri cursed him that he would be worshipped nowhere except Pushkar \u2014 because he had married Gayatri without waiting for her. This is why Pushkar has the only Brahma temple on Earth.",
+              "image": "/images/brahma_purana/pushkar_curse.jpg",
+              "subPlaceId": "brahma_temple"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gaya",
+      "name": "Gaya \u2014 Brahma's Yajna",
+      "storyRegion": "Sacred of the Dead",
+      "coordinates": {
+        "lat": 24.7914,
+        "lng": 84.9994
+      },
+      "importance": 1,
+      "modernName": "Gaya, Bihar",
+      "modernInfo": "Hindus come here to perform Pind Daan (ancestral rites). Phalgu river flows below. Vishnupad Temple marks Vishnu's footprint.",
+      "modernMapUrl": "https://maps.google.com/?q=Gaya,Bihar",
+      "subPlaces": [
+        {
+          "id": "vishnupad",
+          "name": "Vishnupad Temple",
+          "coordinates": {
+            "lat": 24.7914,
+            "lng": 85.0095
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "gaya_s1",
+              "sceneNumber": 1,
+              "title": "Brahma performs the great yajna",
+              "description": "Brahma performed a yajna here so powerful that whoever dies in Gaya attains liberation. The demon Gayasura was sacrificed here \u2014 his body became the sacred earth of Gaya.",
+              "image": "/images/brahma_purana/gaya_yajna.jpg",
+              "subPlaceId": "vishnupad"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

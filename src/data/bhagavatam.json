@@ -1,0 +1,136 @@
+{
+  "id": "bhagavatam",
+  "book": "Bhagavata Purana",
+  "centerCoordinates": { "lat": 25.0, "lng": 78.0 },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "mathura",
+      "name": "Mathura",
+      "storyRegion": "Braj Bhoomi",
+      "coordinates": { "lat": 27.4924, "lng": 77.6737 },
+      "importance": 1,
+      "modernName": "Mathura, Uttar Pradesh",
+      "modernInfo": "Krishna Janmabhoomi temple marks the exact birthplace. One of 7 sacred cities.",
+      "modernMapUrl": "https://maps.google.com/?q=Mathura,UttarPradesh",
+      "subPlaces": [
+        {
+          "id": "krishna_janmabhoomi",
+          "name": "Krishna Janmabhoomi",
+          "coordinates": { "lat": 27.5036, "lng": 77.6614 },
+          "importance": 2,
+          "scenes": [
+            { "id": "mathura_s1", "sceneNumber": 1, "title": "Birth of Krishna", "description": "Krishna was born in a prison cell to Devaki and Vasudeva at midnight. The chains fell off and the guards slept as the divine child appeared.", "image": "/images/bhagavatam/mathura_krishna_birth.jpg", "subPlaceId": "krishna_janmabhoomi" },
+            { "id": "mathura_s2", "sceneNumber": 2, "title": "Vasudeva crosses the Yamuna", "description": "Vasudeva carried the infant Krishna in a basket through the flooded Yamuna river to safety in Gokul. The river parted to let them pass.", "image": "/images/bhagavatam/mathura_yamuna_crossing.jpg", "subPlaceId": "krishna_janmabhoomi" }
+          ]
+        },
+        {
+          "id": "kansa_court",
+          "name": "Kansa's Court",
+          "coordinates": { "lat": 27.4900, "lng": 77.6800 },
+          "importance": 2,
+          "scenes": [
+            { "id": "mathura_s3", "sceneNumber": 3, "title": "Krishna defeats Kansa", "description": "Krishna returned to Mathura, defeated the wrestlers and finally killed his evil uncle Kansa, freeing his parents from prison.", "image": "/images/bhagavatam/mathura_kansa_defeat.jpg", "subPlaceId": "kansa_court" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gokul",
+      "name": "Gokul",
+      "storyRegion": "Braj Bhoomi",
+      "coordinates": { "lat": 27.4100, "lng": 77.7400 },
+      "importance": 1,
+      "modernName": "Gokul, Uttar Pradesh",
+      "modernInfo": "Village where Krishna spent his infancy. Nand Bhavan temple marks Nanda's home.",
+      "modernMapUrl": "https://maps.google.com/?q=Gokul,UttarPradesh",
+      "subPlaces": [
+        {
+          "id": "nanda_bhavan",
+          "name": "Nanda's Home",
+          "coordinates": { "lat": 27.4150, "lng": 77.7380 },
+          "importance": 2,
+          "scenes": [
+            { "id": "gokul_s1", "sceneNumber": 1, "title": "Putana is slain", "description": "The demoness Putana came disguised as a beautiful woman to poison the infant Krishna. Krishna sucked out her life force as he drank her milk.", "image": "/images/bhagavatam/gokul_putana.jpg", "subPlaceId": "nanda_bhavan" },
+            { "id": "gokul_s2", "sceneNumber": 2, "title": "Krishna uproots the Yamalarjuna trees", "description": "The toddler Krishna, tied to a mortar as punishment, dragged it between two trees — Nalakuvara and Manigriva cursed as trees — and freed them.", "image": "/images/bhagavatam/gokul_yamalarjuna.jpg", "subPlaceId": "nanda_bhavan" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vrindavan",
+      "name": "Vrindavan",
+      "storyRegion": "Braj Bhoomi",
+      "coordinates": { "lat": 27.5794, "lng": 77.6972 },
+      "importance": 1,
+      "modernName": "Vrindavan, Uttar Pradesh",
+      "modernInfo": "City of 5000+ temples. Banke Bihari, ISKCON, Prem Mandir are major shrines. The Yamuna flows nearby.",
+      "modernMapUrl": "https://maps.google.com/?q=Vrindavan,UttarPradesh",
+      "subPlaces": [
+        {
+          "id": "nidhivan",
+          "name": "Nidhivan",
+          "coordinates": { "lat": 27.5820, "lng": 77.6950 },
+          "importance": 2,
+          "scenes": [
+            { "id": "vrindavan_s1", "sceneNumber": 1, "title": "Raas Leela", "description": "Krishna played his flute at midnight and the Gopis left everything to dance with him in the forest. For each Gopi, Krishna multiplied himself so all danced with him simultaneously.", "image": "/images/bhagavatam/vrindavan_raas_leela.jpg", "subPlaceId": "nidhivan" },
+            { "id": "vrindavan_s2", "sceneNumber": 2, "title": "Krishna steals butter", "description": "Krishna the butter thief snuck into neighbours' homes, stood on his friends' shoulders to reach hanging pots of butter, and shared it with the monkeys.", "image": "/images/bhagavatam/vrindavan_butter.jpg", "subPlaceId": "nidhivan" }
+          ]
+        },
+        {
+          "id": "yamuna_bank",
+          "name": "Yamuna River Bank",
+          "coordinates": { "lat": 27.5700, "lng": 77.7100 },
+          "importance": 2,
+          "scenes": [
+            { "id": "vrindavan_s3", "sceneNumber": 3, "title": "Kaliya Daman", "description": "The multi-headed serpent Kaliya had poisoned the Yamuna. Krishna dived in, danced on its hoods, and subdued it — forcing it to leave for the ocean.", "image": "/images/bhagavatam/vrindavan_kaliya.jpg", "subPlaceId": "yamuna_bank" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "govardhan",
+      "name": "Govardhan Hill",
+      "storyRegion": "Braj Bhoomi",
+      "coordinates": { "lat": 27.4965, "lng": 77.4648 },
+      "importance": 1,
+      "modernName": "Govardhan, Uttar Pradesh",
+      "modernInfo": "Pilgrims walk the 21km parikrama (circumambulation) of the hill. Manasi Ganga lake is at its base.",
+      "modernMapUrl": "https://maps.google.com/?q=Govardhan,UttarPradesh",
+      "subPlaces": [
+        {
+          "id": "govardhan_peak",
+          "name": "Govardhan Peak",
+          "coordinates": { "lat": 27.4990, "lng": 77.4680 },
+          "importance": 2,
+          "scenes": [
+            { "id": "govardhan_s1", "sceneNumber": 1, "title": "Krishna lifts Govardhan", "description": "Indra sent furious storms to punish the villagers for not worshipping him. Krishna lifted the entire Govardhan hill with one finger as an umbrella to shelter everyone.", "image": "/images/bhagavatam/govardhan_hill_lift.jpg", "subPlaceId": "govardhan_peak" },
+            { "id": "govardhan_s2", "sceneNumber": 2, "title": "Indra surrenders", "description": "After 7 days, Indra accepted defeat. He came down from the heavens and bowed before Krishna, recognising him as the Supreme Being.", "image": "/images/bhagavatam/govardhan_indra_surrender.jpg", "subPlaceId": "govardhan_peak" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dwarka",
+      "name": "Dwarka",
+      "storyRegion": "Yadava Kingdom",
+      "coordinates": { "lat": 22.2442, "lng": 68.9685 },
+      "importance": 1,
+      "modernName": "Dwarka, Gujarat",
+      "modernInfo": "One of the 4 Char Dham pilgrimage sites. Dwarkadhish temple is over 2500 years old. Marine archaeology found submerged structures offshore.",
+      "modernMapUrl": "https://maps.google.com/?q=Dwarka,Gujarat",
+      "subPlaces": [
+        {
+          "id": "dwarkadhish",
+          "name": "Dwarkadhish Temple",
+          "coordinates": { "lat": 22.2372, "lng": 68.9670 },
+          "importance": 2,
+          "scenes": [
+            { "id": "dwarka_s1", "sceneNumber": 1, "title": "Krishna builds Dwarka", "description": "Architect Vishwakarma built the golden city of Dwarka overnight on land reclaimed from the sea — 12 yojanas of divine construction for Krishna's new kingdom.", "image": "/images/bhagavatam/dwarka_construction.jpg", "subPlaceId": "dwarkadhish" },
+            { "id": "dwarka_s2", "sceneNumber": 2, "title": "Dwarka submerged", "description": "36 years after the Mahabharata war, as Krishna predicted, the ocean reclaimed Dwarka. The city sank into the sea exactly as he had prophesied.", "image": "/images/bhagavatam/dwarka_submergence.jpg", "subPlaceId": "dwarkadhish" }
+          ]
+        }
+      ]
+    }
+  ]
+}

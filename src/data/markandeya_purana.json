@@ -1,0 +1,87 @@
+{
+  "id": "markandeya_purana",
+  "book": "Markandeya Purana",
+  "centerCoordinates": {
+    "lat": 22.0,
+    "lng": 78.0
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "vindhyachal",
+      "name": "Vindhyachal",
+      "storyRegion": "Vindhya Mountains",
+      "coordinates": {
+        "lat": 25.1112,
+        "lng": 82.5693
+      },
+      "importance": 1,
+      "modernName": "Vindhyachal, Uttar Pradesh",
+      "modernInfo": "Main seat of Vindhyavasini Devi. The Devi Mahatmya (Durga Saptashati) was composed here. Part of the Shakti Peetha circuit.",
+      "modernMapUrl": "https://maps.google.com/?q=Vindhyavasini+Temple,Vindhyachal",
+      "subPlaces": [
+        {
+          "id": "vindhya_temple",
+          "name": "Vindhyavasini Temple",
+          "coordinates": {
+            "lat": 25.1112,
+            "lng": 82.5693
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "vindhya_s1",
+              "sceneNumber": 1,
+              "title": "Durga slays Mahishasura",
+              "description": "The Markandeya Purana contains the Devi Mahatmya \u2014 the glory of the Goddess. The demon Mahishasura had conquered heaven. Durga was born from the combined energy of all gods and fought him for 9 days on the Vindhya mountains before slaying him.",
+              "image": "/images/markandeya_purana/vindhya_durga.jpg",
+              "subPlaceId": "vindhya_temple"
+            },
+            {
+              "id": "vindhya_s2",
+              "sceneNumber": 2,
+              "title": "The 9 nights of Navratri",
+              "description": "The 9-day battle between Durga and Mahishasura is celebrated as Navratri every year. Each night a different form of the Goddess \u2014 Shailputri, Brahmacharini, Chandraghanta... \u2014 is worshipped.",
+              "image": "/images/markandeya_purana/navratri.jpg",
+              "subPlaceId": "vindhya_temple"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chamundeshwari",
+      "name": "Chamundi Hills",
+      "storyRegion": "Karnataka Highlands",
+      "coordinates": {
+        "lat": 12.2725,
+        "lng": 76.67
+      },
+      "importance": 1,
+      "modernName": "Mysuru, Karnataka",
+      "modernInfo": "Chamundeshwari temple on the hill overlooking Mysuru palace. The demon Mahishasura gave his name to the city \u2014 Mahishuru became Mysuru.",
+      "modernMapUrl": "https://maps.google.com/?q=Chamundeshwari+Temple,Mysuru",
+      "subPlaces": [
+        {
+          "id": "chamundi_peak",
+          "name": "Chamundeshwari Temple",
+          "coordinates": {
+            "lat": 12.2725,
+            "lng": 76.67
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "chamundi_s1",
+              "sceneNumber": 1,
+              "title": "Durga becomes Chamundeshwari",
+              "description": "After slaying Chanda and Munda, Durga was called Chamunda. She pursued the buffalo demon Mahishasura to these hills and slew him here. The city of Mysuru (Mahishuru) is named after the demon she defeated.",
+              "image": "/images/markandeya_purana/chamundeshwari.jpg",
+              "subPlaceId": "chamundi_peak"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

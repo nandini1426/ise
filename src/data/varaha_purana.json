@@ -1,0 +1,53 @@
+{
+  "id": "varaha_purana",
+  "book": "Varaha Purana",
+  "centerCoordinates": {
+    "lat": 19.0,
+    "lng": 79.0
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "tirupati_varaha",
+      "name": "Varaha Swami \u2014 Tirupati",
+      "storyRegion": "Varaha's Sacred Hill",
+      "coordinates": {
+        "lat": 13.6834,
+        "lng": 79.3473
+      },
+      "importance": 1,
+      "modernName": "Tirupati, Andhra Pradesh",
+      "modernInfo": "Varaha (boar avatar) is the kshetrapalaka (protector) of the entire Tirupati hill. Devotees must first take Varaha's blessing before seeing Venkateswara.",
+      "modernMapUrl": "https://maps.google.com/?q=Varaha+Swami+Temple,Tirupati",
+      "subPlaces": [
+        {
+          "id": "varaha_shrine",
+          "name": "Varaha Swami Temple",
+          "coordinates": {
+            "lat": 13.682,
+            "lng": 79.3465
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "varaha_s1",
+              "sceneNumber": 1,
+              "title": "Vishnu lifts Earth from the cosmic ocean",
+              "description": "The demon Hiranyaksha had dragged the Earth to the bottom of the cosmic ocean. Vishnu took the form of a cosmic boar \u2014 larger than a mountain \u2014 dived to the ocean floor, lifted Earth on his tusks, and slew the demon in battle that lasted a thousand years.",
+              "image": "/images/varaha_purana/varaha_earth.jpg",
+              "subPlaceId": "varaha_shrine"
+            },
+            {
+              "id": "varaha_s2",
+              "sceneNumber": 2,
+              "title": "Earth rests on Varaha's tusk",
+              "description": "The Varaha Purana says the Earth (Bhudevi) is still resting on the tusk of Varaha. When Varaha moves, earthquakes occur. Bhudevi became his consort \u2014 she is the other wife of Vishnu alongside Lakshmi.",
+              "image": "/images/varaha_purana/varaha_tusk.jpg",
+              "subPlaceId": "varaha_shrine"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

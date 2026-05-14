@@ -1,0 +1,87 @@
+{
+  "id": "narada_purana",
+  "book": "Narada Purana",
+  "centerCoordinates": {
+    "lat": 27.0,
+    "lng": 78.0
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "haridwar",
+      "name": "Haridwar",
+      "storyRegion": "Gateway to the Gods",
+      "coordinates": {
+        "lat": 29.9457,
+        "lng": 78.1642
+      },
+      "importance": 1,
+      "modernName": "Haridwar, Uttarakhand",
+      "modernInfo": "Where Ganga descends from the mountains to the plains. Har Ki Pauri ghat. One of 4 Kumbh Mela sites. Ganga Aarti at sunset.",
+      "modernMapUrl": "https://maps.google.com/?q=Haridwar,Uttarakhand",
+      "subPlaces": [
+        {
+          "id": "har_ki_pauri",
+          "name": "Har Ki Pauri \u2014 Sacred Ghat",
+          "coordinates": {
+            "lat": 29.958,
+            "lng": 78.1624
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "haridwar_s1",
+              "sceneNumber": 1,
+              "title": "Ganga descends to Earth",
+              "description": "The Narada Purana describes how Narada convinced King Bhagirath to perform impossible penance to bring Ganga from heaven. After thousands of years, Ganga agreed to descend \u2014 but only if Shiva caught her in his matted hair first.",
+              "image": "/images/narada_purana/haridwar_ganga.jpg",
+              "subPlaceId": "har_ki_pauri"
+            },
+            {
+              "id": "haridwar_s2",
+              "sceneNumber": 2,
+              "title": "Nectar drops at Kumbh",
+              "description": "When the gods and demons churned the ocean, a pot of nectar (kumbh) emerged. As Garuda flew with it, drops fell at 4 places \u2014 Haridwar, Prayagraj, Ujjain, Nashik. Every 12 years, Kumbh Mela commemorates this.",
+              "image": "/images/narada_purana/haridwar_kumbh.jpg",
+              "subPlaceId": "har_ki_pauri"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naimisharanya",
+      "name": "Naimisharanya",
+      "storyRegion": "Forest of Sages",
+      "coordinates": {
+        "lat": 26.9774,
+        "lng": 80.4614
+      },
+      "importance": 1,
+      "modernName": "Naimisharanya, Uttar Pradesh",
+      "modernInfo": "The forest where all 88,000 sages gathered to hear the Puranas from Suta Goswami. Still a major pilgrimage site.",
+      "modernMapUrl": "https://maps.google.com/?q=Naimisharanya,UttarPradesh",
+      "subPlaces": [
+        {
+          "id": "chakra_tirtha",
+          "name": "Chakra Tirtha",
+          "coordinates": {
+            "lat": 26.98,
+            "lng": 80.46
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "naimisha_s1",
+              "sceneNumber": 1,
+              "title": "The sages gather to hear the Puranas",
+              "description": "88,000 sages assembled at Naimisharanya to perform a yajna lasting thousands of years. Suta Goswami narrated all 18 Mahapuranas here \u2014 including the Narada Purana \u2014 making it the fountainhead of all Puranic knowledge.",
+              "image": "/images/narada_purana/naimisharanya.jpg",
+              "subPlaceId": "chakra_tirtha"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

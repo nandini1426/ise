@@ -1,0 +1,114 @@
+{
+  "id": "devi_bhagavata",
+  "book": "Devi Bhagavata",
+  "centerCoordinates": { "lat": 23.0, "lng": 80.0 },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "kamakhya",
+      "name": "Kamakhya",
+      "storyRegion": "Shakti Peetha — Northeast",
+      "coordinates": { "lat": 26.1664, "lng": 91.7048 },
+      "importance": 1,
+      "modernName": "Guwahati, Assam",
+      "modernInfo": "Most powerful Shakti Peetha. Ambubachi Mela held annually. The goddess has no idol — a natural cleft in rock is worshipped.",
+      "modernMapUrl": "https://maps.google.com/?q=Kamakhya+Temple,Guwahati",
+      "subPlaces": [
+        {
+          "id": "kamakhya_shrine",
+          "name": "Kamakhya Temple",
+          "coordinates": { "lat": 26.1664, "lng": 91.7048 },
+          "importance": 2,
+          "scenes": [
+            { "id": "kamakhya_s1", "sceneNumber": 1, "title": "Sati's womb falls here", "description": "When Vishnu dismembered Sati's body to stop Shiva's grief, 51 body parts fell across the subcontinent. Kamakhya is where Sati's womb fell — making it the most sacred of all Shakti Peethas.", "image": "/images/devi_bhagavata/kamakhya.jpg", "subPlaceId": "kamakhya_shrine" },
+            { "id": "kamakhya_s2", "sceneNumber": 2, "title": "The Goddess bleeds", "description": "Every year in June the goddess menstruates — the Brahmaputra river runs red for three days. The temple closes for Ambubachi. Devotees receive red cloth as prasad — one of the most powerful blessings.", "image": "/images/devi_bhagavata/kamakhya_ambubachi.jpg", "subPlaceId": "kamakhya_shrine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vaishno_devi",
+      "name": "Vaishno Devi",
+      "storyRegion": "Shakti Peetha — North",
+      "coordinates": { "lat": 33.0296, "lng": 74.9524 },
+      "importance": 1,
+      "modernName": "Katra, Jammu & Kashmir",
+      "modernInfo": "8 million pilgrims annually — one of India's most visited shrines. 14km trek through Trikuta mountains at 5200 feet.",
+      "modernMapUrl": "https://maps.google.com/?q=Vaishno+Devi+Temple,Katra",
+      "subPlaces": [
+        {
+          "id": "vaishno_cave",
+          "name": "Holy Cave Shrine",
+          "coordinates": { "lat": 33.0296, "lng": 74.9524 },
+          "importance": 2,
+          "scenes": [
+            { "id": "vaishno_s1", "sceneNumber": 1, "title": "The goddess meditates in the cave", "description": "Vaishno Devi meditated in this cave for 9 months with the demon Bhairavnath pursuing her. She finally revealed her full divine form and destroyed him — his head flew to the mountain peak nearby.", "image": "/images/devi_bhagavata/vaishno_devi.jpg", "subPlaceId": "vaishno_cave" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kolkata_kali",
+      "name": "Kalighat",
+      "storyRegion": "Shakti Peetha — East",
+      "coordinates": { "lat": 22.5185, "lng": 88.3430 },
+      "importance": 1,
+      "modernName": "Kolkata, West Bengal",
+      "modernInfo": "Sati's right toe fell here. Kolkata's name derives from Kalighat. Ramakrishna Paramahamsa worshipped here daily.",
+      "modernMapUrl": "https://maps.google.com/?q=Kalighat+Temple,Kolkata",
+      "subPlaces": [
+        {
+          "id": "kalighat_shrine",
+          "name": "Kalighat Kali Temple",
+          "coordinates": { "lat": 22.5185, "lng": 88.3430 },
+          "importance": 2,
+          "scenes": [
+            { "id": "kalighat_s1", "sceneNumber": 1, "title": "Kali appears at Kalighat", "description": "Sati's right big toe fell at this spot on the banks of the Adi Ganga. The goddess Kali — the fierce, primordial form — has been worshipped here since time immemorial.", "image": "/images/devi_bhagavata/kalighat.jpg", "subPlaceId": "kalighat_shrine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kolhapur",
+      "name": "Mahalakshmi — Kolhapur",
+      "storyRegion": "Shakti Peetha — West",
+      "coordinates": { "lat": 16.7050, "lng": 74.2290 },
+      "importance": 1,
+      "modernName": "Kolhapur, Maharashtra",
+      "modernInfo": "Sati's eyes fell here. The goddess here faces west — unique among all Shakti Peethas. The sunrise directly illuminates the idol only on the 3 days around the equinoxes.",
+      "modernMapUrl": "https://maps.google.com/?q=Mahalakshmi+Temple,Kolhapur",
+      "subPlaces": [
+        {
+          "id": "kolhapur_shrine",
+          "name": "Mahalakshmi Temple",
+          "coordinates": { "lat": 16.7050, "lng": 74.2290 },
+          "importance": 2,
+          "scenes": [
+            { "id": "kolhapur_s1", "sceneNumber": 1, "title": "Lakshmi destroys Kolhasura", "description": "The demon Kolhasura's terror was ended by Mahalakshmi who appeared here and slew him. Before dying, he requested the city be named after him — she granted it. Kolhapur means 'city of Kolha'.", "image": "/images/devi_bhagavata/kolhapur.jpg", "subPlaceId": "kolhapur_shrine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kanyakumari",
+      "name": "Kanyakumari Devi",
+      "storyRegion": "Shakti Peetha — South",
+      "coordinates": { "lat": 8.0879, "lng": 77.5389 },
+      "importance": 1,
+      "modernName": "Kanyakumari, Tamil Nadu",
+      "modernInfo": "Southernmost tip of India. Three oceans meet here — Arabian Sea, Bay of Bengal, Indian Ocean. Sati's back fell here. Vivekananda Rock memorial visible offshore.",
+      "modernMapUrl": "https://maps.google.com/?q=Kanyakumari+Temple,TamilNadu",
+      "subPlaces": [
+        {
+          "id": "kanyakumari_shrine",
+          "name": "Bhagavathi Amman Temple",
+          "coordinates": { "lat": 8.0879, "lng": 77.5389 },
+          "importance": 2,
+          "scenes": [
+            { "id": "kanyakumari_s1", "sceneNumber": 1, "title": "The virgin goddess waits", "description": "The goddess waited here as a virgin bride for Shiva who never came — he was distracted. She remains Kanya (virgin) Kumari (goddess) forever, her nose ring so bright it misleads sailors into thinking it is a lighthouse.", "image": "/images/devi_bhagavata/kanyakumari.jpg", "subPlaceId": "kanyakumari_shrine" }
+          ]
+        }
+      ]
+    }
+  ]
+}

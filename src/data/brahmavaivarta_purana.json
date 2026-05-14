@@ -1,0 +1,53 @@
+{
+  "id": "brahmavaivarta_purana",
+  "book": "Brahmavaivarta Purana",
+  "centerCoordinates": {
+    "lat": 27.5,
+    "lng": 77.7
+  },
+  "defaultZoom": 6,
+  "places": [
+    {
+      "id": "vrindavan_brahma",
+      "name": "Vrindavan \u2014 Radha Krishna",
+      "storyRegion": "Braj Bhoomi",
+      "coordinates": {
+        "lat": 27.5794,
+        "lng": 77.6972
+      },
+      "importance": 1,
+      "modernName": "Vrindavan, Uttar Pradesh",
+      "modernInfo": "The Brahmavaivarta Purana focuses on the eternal love of Radha and Krishna. Banke Bihari and Radha Raman temples are the main shrines.",
+      "modernMapUrl": "https://maps.google.com/?q=Vrindavan,UttarPradesh",
+      "subPlaces": [
+        {
+          "id": "radha_kund",
+          "name": "Radha Kund",
+          "coordinates": {
+            "lat": 27.51,
+            "lng": 77.49
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "radha_kund_s1",
+              "sceneNumber": 1,
+              "title": "Radha's divine supremacy",
+              "description": "The Brahmavaivarta Purana declares Radha supreme even over Krishna \u2014 she is Prakriti, the primordial energy, to Krishna's Purusha. She exists before creation and will remain after dissolution.",
+              "image": "/images/brahmavaivarta_purana/radha_supreme.jpg",
+              "subPlaceId": "radha_kund"
+            },
+            {
+              "id": "radha_kund_s2",
+              "sceneNumber": 2,
+              "title": "Radha Kund \u2014 the most sacred lake",
+              "description": "Radha Kund is considered more sacred than the Ganga itself. Bathing here on Bahula Ashtami (Radha's ashtami) is said to grant the love of Krishna directly.",
+              "image": "/images/brahmavaivarta_purana/radha_kund.jpg",
+              "subPlaceId": "radha_kund"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

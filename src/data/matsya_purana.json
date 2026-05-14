@@ -1,0 +1,53 @@
+{
+  "id": "matsya_purana",
+  "book": "Matsya Purana",
+  "centerCoordinates": {
+    "lat": 31.5,
+    "lng": 77.0
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "manali_manu",
+      "name": "Manali \u2014 Manu's Valley",
+      "storyRegion": "Himalayan Refuge",
+      "coordinates": {
+        "lat": 32.2432,
+        "lng": 77.1892
+      },
+      "importance": 1,
+      "modernName": "Manali, Himachal Pradesh",
+      "modernInfo": "Manali means 'home of Manu' \u2014 Manu-Alaya. The great flood survivor and progenitor of humanity built his home here after the waters receded.",
+      "modernMapUrl": "https://maps.google.com/?q=Manali,HimachalPradesh",
+      "subPlaces": [
+        {
+          "id": "manu_temple",
+          "name": "Manu Temple",
+          "coordinates": {
+            "lat": 32.248,
+            "lng": 77.1917
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "matsya_s1",
+              "sceneNumber": 1,
+              "title": "The tiny fish warns of the great flood",
+              "description": "A tiny fish came to King Manu and said: 'Protect me and I will save you from the coming flood.' Manu kept the fish in a pot. It grew bigger and bigger until it filled the ocean \u2014 revealing itself as Vishnu in fish form.",
+              "image": "/images/matsya_purana/matsya_fish.jpg",
+              "subPlaceId": "manu_temple"
+            },
+            {
+              "id": "matsya_s2",
+              "sceneNumber": 2,
+              "title": "Manu survives the Pralaya",
+              "description": "Vishnu as Matsya towed Manu's boat through the great deluge that destroyed all life. Manu carried the seven sages and seeds of all plants. When the flood receded, humanity began again from this valley \u2014 Manali.",
+              "image": "/images/matsya_purana/matsya_flood.jpg",
+              "subPlaceId": "manu_temple"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

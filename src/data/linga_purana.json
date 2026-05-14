@@ -1,0 +1,87 @@
+{
+  "id": "linga_purana",
+  "book": "Linga Purana",
+  "centerCoordinates": {
+    "lat": 34.0,
+    "lng": 77.5
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "amarnath",
+      "name": "Amarnath",
+      "storyRegion": "Shiva's Ice Cave",
+      "coordinates": {
+        "lat": 34.2143,
+        "lng": 75.5027
+      },
+      "importance": 1,
+      "modernName": "Amarnath, Jammu & Kashmir",
+      "modernInfo": "Natural ice Shivalinga forms every year. 4500m altitude. 3-5 lakh pilgrims annually. Open July\u2013August only.",
+      "modernMapUrl": "https://maps.google.com/?q=Amarnath+Cave,JammuKashmir",
+      "subPlaces": [
+        {
+          "id": "amarnath_cave",
+          "name": "Amarnath Ice Cave",
+          "coordinates": {
+            "lat": 34.2143,
+            "lng": 75.5027
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "amarnath_s1",
+              "sceneNumber": 1,
+              "title": "Shiva reveals the secret of immortality",
+              "description": "At Amarnath, Shiva revealed the secret of immortality (Amar Katha) to Parvati. He first sent away his vehicle Nandi, his snake Vasuki, Ganesh \u2014 so only Parvati heard. But two doves also heard \u2014 they became immortal and still live in the cave.",
+              "image": "/images/linga_purana/amarnath_cave.jpg",
+              "subPlaceId": "amarnath_cave"
+            },
+            {
+              "id": "amarnath_s2",
+              "sceneNumber": 2,
+              "title": "The self-forming ice Shivalinga",
+              "description": "Every year, without any human action, an ice linga forms naturally in the cave as the moon waxes, and melts as it wanes. It reaches its full size on Shravan Purnima \u2014 Raksha Bandhan day.",
+              "image": "/images/linga_purana/amarnath_ice_linga.jpg",
+              "subPlaceId": "amarnath_cave"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kailash",
+      "name": "Mount Kailash",
+      "storyRegion": "Abode of Shiva",
+      "coordinates": {
+        "lat": 31.0672,
+        "lng": 81.3119
+      },
+      "importance": 1,
+      "modernName": "Mount Kailash, Tibet",
+      "modernInfo": "Never climbed \u2014 the only major peak never summited by mountaineers. Four great rivers originate here: Indus, Sutlej, Brahmaputra, Karnali. 52km parikrama circuit.",
+      "modernMapUrl": "https://maps.google.com/?q=Mount+Kailash,Tibet",
+      "subPlaces": [
+        {
+          "id": "kailash_peak",
+          "name": "Kailash Peak",
+          "coordinates": {
+            "lat": 31.0672,
+            "lng": 81.3119
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "kailash_s1",
+              "sceneNumber": 1,
+              "title": "Shiva meditates eternally",
+              "description": "Shiva sits in eternal meditation atop Kailash \u2014 the cosmic mountain at the centre of the universe. The Linga Purana says Kailash is the physical form of the cosmic Shivalinga itself.",
+              "image": "/images/linga_purana/kailash_shiva.jpg",
+              "subPlaceId": "kailash_peak"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

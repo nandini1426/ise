@@ -1,0 +1,79 @@
+{
+  "id": "skanda_purana",
+  "book": "Skanda Purana",
+  "centerCoordinates": {
+    "lat": 11.0,
+    "lng": 77.0
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "palani",
+      "name": "Palani \u2014 Murugan",
+      "storyRegion": "Murugan's Hill",
+      "coordinates": {
+        "lat": 10.45,
+        "lng": 77.52
+      },
+      "importance": 1,
+      "modernName": "Palani, Tamil Nadu",
+      "modernInfo": "One of 6 abodes of Murugan (Arupadaiveedu). 693 steps to the hilltop shrine or rope car. The idol made of rare herbs \u2014 Navapashanam.",
+      "modernMapUrl": "https://maps.google.com/?q=Palani+Murugan+Temple,TamilNadu",
+      "subPlaces": [
+        {
+          "id": "palani_hill",
+          "name": "Palani Hill Temple",
+          "coordinates": {
+            "lat": 10.4523,
+            "lng": 77.5249
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "palani_s1",
+              "sceneNumber": 1,
+              "title": "Murugan renounces everything",
+              "description": "When the sage Narada gave the mango of wisdom to Shiva, Shiva gave it to whoever could circumambulate the universe first. Kartikeya/Murugan raced around the cosmos, but Ganesh simply walked around his parents \u2014 the universe. Murugan, upset, renounced everything and went to Palani hill alone.",
+              "image": "/images/skanda_purana/palani_murugan.jpg",
+              "subPlaceId": "palani_hill"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "karthikeya_origin",
+      "name": "Saravana Poigai",
+      "storyRegion": "Skanda's Birthplace",
+      "coordinates": {
+        "lat": 11.6643,
+        "lng": 78.146
+      },
+      "importance": 1,
+      "modernName": "Thiruvannamalai area, Tamil Nadu",
+      "modernInfo": "The 6 sacred lakes (Saravana Poigai) where Kartikeya/Skanda was born from Shiva's third eye sparks that fell into the Ganga.",
+      "modernMapUrl": "https://maps.google.com/?q=Thiruvannamalai,TamilNadu",
+      "subPlaces": [
+        {
+          "id": "six_lakes",
+          "name": "Six Sacred Lakes",
+          "coordinates": {
+            "lat": 11.6643,
+            "lng": 78.146
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "skanda_birth_s1",
+              "sceneNumber": 1,
+              "title": "Skanda is born from Shiva's fire",
+              "description": "The spark from Shiva's third eye was so powerful that even Agni and Ganga could not hold it. It fell into 6 reeds in 6 sacred lakes and was nursed by 6 Kritikas (Pleiades stars). Kartikeya was born with 6 heads \u2014 one for each mother.",
+              "image": "/images/skanda_purana/skanda_birth.jpg",
+              "subPlaceId": "six_lakes"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

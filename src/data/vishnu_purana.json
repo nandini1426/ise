@@ -1,0 +1,129 @@
+{
+  "id": "vishnu_purana",
+  "book": "Vishnu Purana",
+  "centerCoordinates": {
+    "lat": 20.0,
+    "lng": 79.0
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "tirupati",
+      "name": "Tirupati \u2014 Venkateswara",
+      "storyRegion": "Vishnu's Abode",
+      "coordinates": {
+        "lat": 13.6288,
+        "lng": 79.4192
+      },
+      "importance": 1,
+      "modernName": "Tirupati, Andhra Pradesh",
+      "modernInfo": "Richest temple in the world. 50,000+ pilgrims daily. Venkateswara is Vishnu's form for Kali Yuga.",
+      "modernMapUrl": "https://maps.google.com/?q=Tirupati+Balaji,AndhraPradesh",
+      "subPlaces": [
+        {
+          "id": "srivari",
+          "name": "Srivari Temple \u2014 7 Hills",
+          "coordinates": {
+            "lat": 13.6834,
+            "lng": 79.3473
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "tirupati_s1",
+              "sceneNumber": 1,
+              "title": "Vishnu descends to Kali Yuga",
+              "description": "When Kali Yuga began, Vishnu chose to live on the Venkata hill to be accessible to all devotees regardless of caste or status. He is the only deity who stays on Earth during Kali Yuga.",
+              "image": "/images/vishnu_purana/tirupati_vishnu.jpg",
+              "subPlaceId": "srivari"
+            },
+            {
+              "id": "tirupati_s2",
+              "sceneNumber": 2,
+              "title": "Padmavathi's wedding loan",
+              "description": "Vishnu borrowed money from Kubera to marry Padmavathi. He is still repaying this loan \u2014 every offering made by pilgrims goes toward this divine debt. This is why Tirupati is the wealthiest temple.",
+              "image": "/images/vishnu_purana/tirupati_wedding.jpg",
+              "subPlaceId": "srivari"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "puri",
+      "name": "Puri \u2014 Jagannath",
+      "storyRegion": "Dham of the East",
+      "coordinates": {
+        "lat": 19.8135,
+        "lng": 85.8312
+      },
+      "importance": 1,
+      "modernName": "Puri, Odisha",
+      "modernInfo": "One of 4 Char Dham. Rath Yatra draws 1 million+ pilgrims. Prasad is cooked in world's largest temple kitchen.",
+      "modernMapUrl": "https://maps.google.com/?q=Jagannath+Temple,Puri",
+      "subPlaces": [
+        {
+          "id": "jagannath_temple",
+          "name": "Jagannath Temple",
+          "coordinates": {
+            "lat": 19.8047,
+            "lng": 85.8183
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "puri_s1",
+              "sceneNumber": 1,
+              "title": "Vishnu becomes Jagannath",
+              "description": "Vishnu took the form of Jagannath \u2014 Lord of the Universe \u2014 at Puri. Unusually, he is depicted without hands or feet, symbolising that the divine is beyond form.",
+              "image": "/images/vishnu_purana/puri_jagannath.jpg",
+              "subPlaceId": "jagannath_temple"
+            },
+            {
+              "id": "puri_s2",
+              "sceneNumber": 2,
+              "title": "Rath Yatra",
+              "description": "Every year Jagannath rides out in a massive chariot pulled by thousands of devotees. The English word 'juggernaut' comes from this unstoppable chariot procession.",
+              "image": "/images/vishnu_purana/puri_rath_yatra.jpg",
+              "subPlaceId": "jagannath_temple"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "badrinath",
+      "name": "Badrinath",
+      "storyRegion": "Dham of the North",
+      "coordinates": {
+        "lat": 30.7433,
+        "lng": 79.4938
+      },
+      "importance": 1,
+      "modernName": "Badrinath, Uttarakhand",
+      "modernInfo": "One of 4 Char Dham. Badri = jujube tree. Open May\u2013November. Alaknanda river flows below.",
+      "modernMapUrl": "https://maps.google.com/?q=Badrinath+Temple,Uttarakhand",
+      "subPlaces": [
+        {
+          "id": "badri_temple",
+          "name": "Badrinarayan Temple",
+          "coordinates": {
+            "lat": 30.7435,
+            "lng": 79.4932
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "badri_s1",
+              "sceneNumber": 1,
+              "title": "Vishnu meditates under Badri tree",
+              "description": "Vishnu meditated here under a Badri (jujube) tree for thousands of years. Lakshmi, his consort, took the form of the tree to protect him from the harsh Himalayan cold.",
+              "image": "/images/vishnu_purana/badrinath_meditation.jpg",
+              "subPlaceId": "badri_temple"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

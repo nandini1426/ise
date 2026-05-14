@@ -1,102 +1,105 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { CATEGORIES, BOOK_META } from '../../data/catalog';
 import './BookSelector.css';
 
-const BOOK_META = {
-  ramayana: {
-    icon: '🏹',
-    color: '#EF9F27',
-    bgColor: '#FAEEDA',
-    tagline: 'The journey of Ram — from Ayodhya to Lanka',
-    period: 'Treta Yuga',
-  },
-  mahabharata: {
-    icon: '⚔️',
-    color: '#3B6D11',
-    bgColor: '#EAF3DE',
-    tagline: 'The great war at Kurukshetra — Dharma vs Adharma',
-    period: 'Dwapara Yuga',
-  },
-  bhagavatam: {
-    icon: '🪷',
-    color: '#7B4EA8',
-    bgColor: '#F3EBF9',
-    tagline: 'The divine stories of Lord Vishnu and his avatars',
-    period: 'Across all Yugas',
-  },
-};
+function BookCard({ bookId, meta, isAvailable, onSelect }) {
+  return (
+    <button
+      className={`bs-card ${!isAvailable ? 'bs-card-locked' : ''}`}
+      style={{ '--card-color': meta.color }}
+      onClick={() => isAvailable && onSelect(bookId)}
+      disabled={!isAvailable}
+    >
+      <div className="bs-card-icon" style={{ background: meta.bgColor || 'rgba(255,255,255,0.08)', color: meta.color }}>
+        {meta.icon}
+      </div>
+      <div className="bs-card-body">
+        <div className="bs-card-title">{meta.title}</div>
+        {meta.author && <div className="bs-card-author">by {meta.author}</div>}
+        <div className="bs-card-tagline">{meta.tagline}</div>
+        {meta.yuga && <div className="bs-card-yuga">{meta.yuga}</div>}
+      </div>
+      <div className="bs-card-end">
+        {isAvailable
+          ? <span className="bs-arrow">→</span>
+          : <span className="bs-coming-soon">Soon</span>
+        }
+      </div>
+    </button>
+  );
+}
 
-function BookSelector({ onBookSelect, books }) {
-  const availableBooks = Object.keys(books);
+function BookSelector({ booksData, onBookSelect }) {
+  const [expandedCategory, setExpandedCategory] = useState('itihasas');
 
   return (
     <div className="book-selector">
+      {/* Header */}
       <div className="bs-header">
-        <div className="bs-logo">
-          <span className="bs-logo-icon">🗺️</span>
-          <span className="bs-logo-name">StoryMaps</span>
-        </div>
-        <p className="bs-subtitle">
-          Explore ancient Indian scriptures through the places where history happened
-        </p>
+        <span className="bs-logo-icon">🗺️</span>
+        <h1 className="bs-logo-name">StoryMaps</h1>
+        <p className="bs-subtitle">Explore ancient scriptures through the places where they happened</p>
       </div>
 
-      <div className="bs-cards-container">
-        <h2 className="bs-section-title">Choose a Scripture</h2>
-        <div className="bs-cards">
-          {availableBooks.map((bookId) => {
-            const book = books[bookId];
-            const meta = BOOK_META[bookId] || {};
-            const majorCount = book.places?.filter(p => p.importance === 1).length || 0;
-            const minorCount = book.places?.reduce(
-              (acc, p) => acc + (p.subPlaces?.length || 0), 0
-            ) || 0;
+      {/* Categories */}
+      <div className="bs-body">
+        {CATEGORIES.map(cat => {
+          const isExpanded = expandedCategory === cat.id;
+          const availableCount = cat.books.filter(id => BOOK_META[id]?.available).length;
 
-            return (
+          return (
+            <div key={cat.id} className="bs-category">
               <button
-                key={bookId}
-                className="bs-card"
-                onClick={() => onBookSelect(bookId)}
-                style={{ '--card-color': meta.color, '--card-bg': meta.bgColor }}
+                className={`bs-cat-header ${isExpanded ? 'open' : ''}`}
+                onClick={() => setExpandedCategory(isExpanded ? null : cat.id)}
               >
-                <div className="bs-card-icon" style={{ background: meta.bgColor, color: meta.color }}>
-                  {meta.icon}
+                <div className="bs-cat-info">
+                  <span className="bs-cat-label">{cat.label}</span>
+                  <span className="bs-cat-subtitle">{cat.subtitle}</span>
                 </div>
-                <div className="bs-card-body">
-                  <h3 className="bs-card-title">{book.book}</h3>
-                  <p className="bs-card-tagline">{meta.tagline}</p>
-                  <div className="bs-card-stats">
-                    <span className="bs-stat">
-                      <span className="bs-stat-dot major" />
-                      {majorCount} major places
-                    </span>
-                    <span className="bs-stat">
-                      <span className="bs-stat-dot minor" />
-                      {minorCount} sub-places
-                    </span>
-                  </div>
-                  <div className="bs-card-period">{meta.period}</div>
+                <div className="bs-cat-meta">
+                  <span className="bs-cat-count">{availableCount} available</span>
+                  <span className="bs-cat-chevron">{isExpanded ? '▲' : '▼'}</span>
                 </div>
-                <div className="bs-card-arrow">→</div>
               </button>
-            );
-          })}
 
-          {/* Coming Soon: Bhagavatam */}
-          <div className="bs-card bs-card-disabled">
-            <div className="bs-card-icon" style={{ background: '#F3EBF9', color: '#7B4EA8' }}>
-              🪷
+              {isExpanded && (
+                <div className="bs-book-list">
+                  {cat.books.map(bookId => {
+                    const meta = BOOK_META[bookId];
+                    if (!meta) return null;
+                    return (
+                      <BookCard
+                        key={bookId}
+                        bookId={bookId}
+                        meta={meta}
+                        isAvailable={!!booksData[bookId]}
+                        onSelect={onBookSelect}
+                      />
+                    );
+                  })}
+                </div>
+              )}
             </div>
-            <div className="bs-card-body">
-              <h3 className="bs-card-title">Bhagavatam</h3>
-              <p className="bs-card-tagline">{BOOK_META.bhagavatam.tagline}</p>
-              <div className="bs-coming-soon">Coming Soon</div>
-            </div>
+          );
+        })}
+
+        {/* Future religions teaser */}
+        <div className="bs-future">
+          <div className="bs-future-title">Coming Later</div>
+          <div className="bs-future-chips">
+            <span>☸️ Buddhism</span>
+            <span>🕉️ Jainism</span>
+            <span>✝️ Bible</span>
+            <span>☪️ Quran</span>
+            <span>✡️ Torah</span>
+            <span>🌿 Vedas</span>
           </div>
         </div>
       </div>
 
       <div className="bs-footer">
-        <p>Navigate the map → Hover for modern names → Click to explore scenes</p>
+        Navigate the map → Tap a node → Explore the story
       </div>
     </div>
   );

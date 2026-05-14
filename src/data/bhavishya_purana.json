@@ -1,0 +1,79 @@
+{
+  "id": "bhavishya_purana",
+  "book": "Bhavishya Purana",
+  "centerCoordinates": {
+    "lat": 28.0,
+    "lng": 77.0
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "kurukshetra_bhavishy",
+      "name": "Kurukshetra \u2014 The Prophecy",
+      "storyRegion": "Dharmakshetra",
+      "coordinates": {
+        "lat": 29.9642,
+        "lng": 76.8178
+      },
+      "importance": 1,
+      "modernName": "Kurukshetra, Haryana",
+      "modernInfo": "The Bhavishya Purana prophecies about Kurukshetra extend to modern times \u2014 it predicted the coming of Islam, Christianity and even British rule in India.",
+      "modernMapUrl": "https://maps.google.com/?q=Kurukshetra,Haryana",
+      "subPlaces": [
+        {
+          "id": "jyotisar",
+          "name": "Jyotisar \u2014 Gita Site",
+          "coordinates": {
+            "lat": 29.975,
+            "lng": 76.81
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "bhavishya_s1",
+              "sceneNumber": 1,
+              "title": "The future is written at Kurukshetra",
+              "description": "The Bhavishya Purana (Purana of the Future) begins at Kurukshetra. It contains prophecies about future avatars, future kings, the deterioration of Kali Yuga, and the eventual arrival of Kalki \u2014 Vishnu's final avatar who will end this age.",
+              "image": "/images/bhavishya_purana/kurukshetra_future.jpg",
+              "subPlaceId": "jyotisar"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "konark",
+      "name": "Konark \u2014 Sun Temple",
+      "storyRegion": "Temple of Time",
+      "coordinates": {
+        "lat": 19.8876,
+        "lng": 86.0945
+      },
+      "importance": 1,
+      "modernName": "Konark, Odisha",
+      "modernInfo": "UNESCO World Heritage Site. The temple is built as a giant chariot of the Sun god with 24 wheels (representing hours) and 7 horses (days of the week).",
+      "modernMapUrl": "https://maps.google.com/?q=Konark+Sun+Temple,Odisha",
+      "subPlaces": [
+        {
+          "id": "konark_temple",
+          "name": "Konark Sun Temple",
+          "coordinates": {
+            "lat": 19.8876,
+            "lng": 86.0945
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "konark_s1",
+              "sceneNumber": 1,
+              "title": "The chariot of time",
+              "description": "The Bhavishya Purana, dedicated to the Sun god Surya, describes Konark as the centre of solar worship. The temple's 24 wheels are sundials \u2014 you can tell time to the minute by the shadows they cast.",
+              "image": "/images/bhavishya_purana/konark_chariot.jpg",
+              "subPlaceId": "konark_temple"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

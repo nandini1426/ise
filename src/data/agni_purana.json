@@ -1,0 +1,53 @@
+{
+  "id": "agni_purana",
+  "book": "Agni Purana",
+  "centerCoordinates": {
+    "lat": 25.3,
+    "lng": 82.9
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "kashi_agni",
+      "name": "Kashi \u2014 Agni's Teaching",
+      "storyRegion": "City of Light",
+      "coordinates": {
+        "lat": 25.3109,
+        "lng": 83.0107
+      },
+      "importance": 1,
+      "modernName": "Varanasi, Uttar Pradesh",
+      "modernInfo": "The Agni Purana was narrated by the fire god Agni to sage Vasishtha at Kashi. It contains encyclopedic knowledge \u2014 rituals, weapons, medicine, grammar, statecraft.",
+      "modernMapUrl": "https://maps.google.com/?q=Varanasi,UttarPradesh",
+      "subPlaces": [
+        {
+          "id": "agni_ghat",
+          "name": "Manikarnika Ghat",
+          "coordinates": {
+            "lat": 25.3085,
+            "lng": 83.0114
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "agni_s1",
+              "sceneNumber": 1,
+              "title": "Agni narrates the encyclopaedia",
+              "description": "The fire god Agni narrated this Purana to sage Vasishtha at Kashi \u2014 the world's oldest city. The Agni Purana contains the most comprehensive knowledge: from temple construction to warfare to medicine to poetry.",
+              "image": "/images/agni_purana/kashi_agni.jpg",
+              "subPlaceId": "agni_ghat"
+            },
+            {
+              "id": "agni_s2",
+              "sceneNumber": 2,
+              "title": "The eternal fire of Manikarnika",
+              "description": "The cremation fires of Manikarnika have never been extinguished for thousands of years. The Agni Purana explains that dying in Kashi, the fire of Agni transforms the soul directly into liberation.",
+              "image": "/images/agni_purana/manikarnika.jpg",
+              "subPlaceId": "agni_ghat"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

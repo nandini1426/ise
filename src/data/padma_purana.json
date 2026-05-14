@@ -1,0 +1,87 @@
+{
+  "id": "padma_purana",
+  "book": "Padma Purana",
+  "centerCoordinates": {
+    "lat": 25.0,
+    "lng": 78.0
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "barsana",
+      "name": "Barsana \u2014 Radha's Home",
+      "storyRegion": "Braj Bhoomi",
+      "coordinates": {
+        "lat": 27.65,
+        "lng": 77.3833
+      },
+      "importance": 1,
+      "modernName": "Barsana, Uttar Pradesh",
+      "modernInfo": "Radha's birthplace. Famous for Lathmar Holi \u2014 women beat men with sticks. Radharani temple on the hill.",
+      "modernMapUrl": "https://maps.google.com/?q=Barsana,UttarPradesh",
+      "subPlaces": [
+        {
+          "id": "radha_temple",
+          "name": "Radharani Temple",
+          "coordinates": {
+            "lat": 27.652,
+            "lng": 77.385
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "barsana_s1",
+              "sceneNumber": 1,
+              "title": "Radha's divine birth",
+              "description": "Radha was not born from a womb but appeared as a divine light in a lotus flower in Barsana. She is the Shakti of Vishnu \u2014 the supreme feminine principle.",
+              "image": "/images/padma_purana/barsana_radha.jpg",
+              "subPlaceId": "radha_temple"
+            },
+            {
+              "id": "barsana_s2",
+              "sceneNumber": 2,
+              "title": "Lathmar Holi",
+              "description": "When Krishna came to Barsana to tease Radha and her friends, the women chased him with lathis (sticks). This divine playfulness is reenacted every year as Lathmar Holi.",
+              "image": "/images/padma_purana/barsana_holi.jpg",
+              "subPlaceId": "radha_temple"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ayodhya_padma",
+      "name": "Ayodhya",
+      "storyRegion": "Sarayu Banks",
+      "coordinates": {
+        "lat": 26.7922,
+        "lng": 82.1998
+      },
+      "importance": 1,
+      "modernName": "Ayodhya, Uttar Pradesh",
+      "modernInfo": "The Padma Purana describes Ayodhya as one of the 7 most sacred cities (Sapta Puri) that grant liberation.",
+      "modernMapUrl": "https://maps.google.com/?q=Ayodhya,UttarPradesh",
+      "subPlaces": [
+        {
+          "id": "sapta_puri",
+          "name": "Ayodhya \u2014 City of Liberation",
+          "coordinates": {
+            "lat": 26.795,
+            "lng": 82.2
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "ayodhya_padma_s1",
+              "sceneNumber": 1,
+              "title": "The seven liberation cities",
+              "description": "The Padma Purana names Ayodhya first among the 7 Sapta Puri \u2014 cities that grant moksha to all who die there: Ayodhya, Mathura, Haridwar, Kashi, Kanchi, Ujjain, Dwarka.",
+              "image": "/images/padma_purana/ayodhya_moksha.jpg",
+              "subPlaceId": "sapta_puri"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

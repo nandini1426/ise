@@ -1,0 +1,158 @@
+{
+  "id": "shiva_purana",
+  "book": "Shiva Purana",
+  "centerCoordinates": { "lat": 22.0, "lng": 78.5 },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "somnath",
+      "name": "Somnath",
+      "storyRegion": "Jyotirlinga 1",
+      "coordinates": { "lat": 20.8880, "lng": 70.4015 },
+      "importance": 1,
+      "modernName": "Somnath, Gujarat",
+      "modernInfo": "First and foremost of 12 Jyotirlingas. Repeatedly destroyed and rebuilt. Current temple consecrated in 1951 by Sardar Patel.",
+      "modernMapUrl": "https://maps.google.com/?q=Somnath+Temple,Gujarat",
+      "subPlaces": [
+        {
+          "id": "somnath_shrine",
+          "name": "Somnath Jyotirlinga",
+          "coordinates": { "lat": 20.8880, "lng": 70.4015 },
+          "importance": 2,
+          "scenes": [
+            { "id": "somnath_s1", "sceneNumber": 1, "title": "The Moon God's penance", "description": "The Moon god Chandra performed penance here to be freed from a curse. Shiva appeared as a column of light — the first Jyotirlinga — granting him liberation.", "image": "/images/shiva_purana/somnath_jyotirlinga.jpg", "subPlaceId": "somnath_shrine" },
+            { "id": "somnath_s2", "sceneNumber": 2, "title": "The eternal temple", "description": "The Somnath temple stands at the point where three sacred rivers meet the sea — Hiran, Kapila, and Saraswati — making it the holiest spot on the western coast.", "image": "/images/shiva_purana/somnath_temple.jpg", "subPlaceId": "somnath_shrine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mallikarjuna",
+      "name": "Mallikarjuna",
+      "storyRegion": "Jyotirlinga 2",
+      "coordinates": { "lat": 16.0739, "lng": 78.8674 },
+      "importance": 1,
+      "modernName": "Srisailam, Andhra Pradesh",
+      "modernInfo": "Located on Srisailam plateau above the Krishna river gorge. One of only two places that is both a Jyotirlinga and a Shakti Peetha.",
+      "modernMapUrl": "https://maps.google.com/?q=Srisailam+Temple,AndhraPradesh",
+      "subPlaces": [
+        {
+          "id": "mallikarjuna_shrine",
+          "name": "Mallikarjuna Shrine",
+          "coordinates": { "lat": 16.0739, "lng": 78.8674 },
+          "importance": 2,
+          "scenes": [
+            { "id": "mallikarjuna_s1", "sceneNumber": 1, "title": "Shiva follows Kartikeya", "description": "When Kartikeya went to Kraunch mountain in anger, Shiva and Parvati came here to be close to their son. Shiva manifested as Mallikarjuna to bless the devotees of this region.", "image": "/images/shiva_purana/mallikarjuna.jpg", "subPlaceId": "mallikarjuna_shrine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mahakaleshwar",
+      "name": "Mahakaleshwar",
+      "storyRegion": "Jyotirlinga 3",
+      "coordinates": { "lat": 23.1828, "lng": 75.7682 },
+      "importance": 1,
+      "modernName": "Ujjain, Madhya Pradesh",
+      "modernInfo": "Only south-facing Jyotirlinga. The legendary city of Vikramaditya. One of 4 Kumbh Mela sites. Shipra river flows here.",
+      "modernMapUrl": "https://maps.google.com/?q=Mahakaleshwar+Temple,Ujjain",
+      "subPlaces": [
+        {
+          "id": "mahakal_shrine",
+          "name": "Mahakal Temple",
+          "coordinates": { "lat": 23.1828, "lng": 75.7682 },
+          "importance": 2,
+          "scenes": [
+            { "id": "mahakal_s1", "sceneNumber": 1, "title": "Shiva defeats Dushana", "description": "The demon Dushana terrorised Ujjain's devotees. Shiva burst forth from the ground as Mahakaleshwar — Lord of Time — and annihilated the demon and his armies.", "image": "/images/shiva_purana/mahakaleshwar.jpg", "subPlaceId": "mahakal_shrine" },
+            { "id": "mahakal_s2", "sceneNumber": 2, "title": "Bhasma Aarti", "description": "Every dawn since ancient times, Mahakal is worshipped with ash from cremation grounds — symbolising that all things return to Shiva, the lord of death and time.", "image": "/images/shiva_purana/mahakal_bhasma.jpg", "subPlaceId": "mahakal_shrine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "omkareshwar",
+      "name": "Omkareshwar",
+      "storyRegion": "Jyotirlinga 4",
+      "coordinates": { "lat": 22.2413, "lng": 76.1534 },
+      "importance": 1,
+      "modernName": "Omkareshwar, Madhya Pradesh",
+      "modernInfo": "Island shaped like the Om symbol in the Narmada river. Two shrines — Omkareshwar and Amareshwar — on the sacred island.",
+      "modernMapUrl": "https://maps.google.com/?q=Omkareshwar,MadhyaPradesh",
+      "subPlaces": [
+        {
+          "id": "omkar_island",
+          "name": "Om Island — Narmada",
+          "coordinates": { "lat": 22.2413, "lng": 76.1534 },
+          "importance": 2,
+          "scenes": [
+            { "id": "omkar_s1", "sceneNumber": 1, "title": "Vindhya Mountain's devotion", "description": "The Vindhya mountain performed severe penance on this island to please Shiva. Shiva split into two lingas — Omkareshwar and Amareshwar — to honour his devotion.", "image": "/images/shiva_purana/omkareshwar.jpg", "subPlaceId": "omkar_island" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kedarnath",
+      "name": "Kedarnath",
+      "storyRegion": "Jyotirlinga 5",
+      "coordinates": { "lat": 30.7352, "lng": 79.0669 },
+      "importance": 1,
+      "modernName": "Kedarnath, Uttarakhand",
+      "modernInfo": "Highest Jyotirlinga at 3,583m altitude. Open only May–November. Mandakini river originates nearby. Adi Shankaracharya attained samadhi here.",
+      "modernMapUrl": "https://maps.google.com/?q=Kedarnath+Temple,Uttarakhand",
+      "subPlaces": [
+        {
+          "id": "kedar_shrine",
+          "name": "Kedarnath Temple",
+          "coordinates": { "lat": 30.7352, "lng": 79.0669 },
+          "importance": 2,
+          "scenes": [
+            { "id": "kedar_s1", "sceneNumber": 1, "title": "Pandavas seek Shiva's forgiveness", "description": "After the Kurukshetra war, the Pandavas sought Shiva to expiate the sin of killing their kin. Shiva turned into a bull to avoid them. When caught, only his hump remained — the Kedarnath linga.", "image": "/images/shiva_purana/kedarnath.jpg", "subPlaceId": "kedar_shrine" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kashi_vishwanath",
+      "name": "Kashi Vishwanath",
+      "storyRegion": "Jyotirlinga 7",
+      "coordinates": { "lat": 25.3109, "lng": 83.0107 },
+      "importance": 1,
+      "modernName": "Varanasi, Uttar Pradesh",
+      "modernInfo": "The eternal city — oldest continuously inhabited city on Earth. Manikarnika ghat never stops burning. The new Kashi Vishwanath Corridor opened in 2021.",
+      "modernMapUrl": "https://maps.google.com/?q=Kashi+Vishwanath+Temple,Varanasi",
+      "subPlaces": [
+        {
+          "id": "vishwanath_ghat",
+          "name": "Vishwanath Temple & Ganga",
+          "coordinates": { "lat": 25.3109, "lng": 83.0107 },
+          "importance": 2,
+          "scenes": [
+            { "id": "kashi_s1", "sceneNumber": 1, "title": "Kashi — Shiva's own city", "description": "Kashi is Shiva's personal abode — the city he carries on his trident above the destruction of the universe. Dying here, Shiva whispers the Taraka mantra in the dying person's ear, granting liberation.", "image": "/images/shiva_purana/kashi_vishwanath.jpg", "subPlaceId": "vishwanath_ghat" },
+            { "id": "kashi_s2", "sceneNumber": 2, "title": "Ganga descends at Kashi", "description": "Shiva caught the descending Ganga in his matted hair to protect the Earth from her force. At Kashi, Ganga flows northward — against her natural course — as a sign of Shiva's blessing.", "image": "/images/shiva_purana/kashi_ganga.jpg", "subPlaceId": "vishwanath_ghat" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rameshwaram_jyotirlinga",
+      "name": "Rameshwaram",
+      "storyRegion": "Jyotirlinga 12",
+      "coordinates": { "lat": 9.2882, "lng": 79.3174 },
+      "importance": 1,
+      "modernName": "Rameshwaram, Tamil Nadu",
+      "modernInfo": "Southernmost Jyotirlinga. The temple has the longest corridor in India. Ram installed the Shivalinga here after defeating Ravana.",
+      "modernMapUrl": "https://maps.google.com/?q=Ramanathaswamy+Temple,Rameshwaram",
+      "subPlaces": [
+        {
+          "id": "ramanathaswamy",
+          "name": "Ramanathaswamy Temple",
+          "coordinates": { "lat": 9.2882, "lng": 79.3174 },
+          "importance": 2,
+          "scenes": [
+            { "id": "rameswaram_s1", "sceneNumber": 1, "title": "Ram installs the Shivalinga", "description": "After defeating Ravana, Ram asked Hanuman to bring a Shivalinga from Kailash. When Hanuman was delayed, Sita made one from sand. Ram worshipped it to atone for Brahmahatya — the sin of killing Ravana, a Brahmin.", "image": "/images/shiva_purana/rameshwaram_linga.jpg", "subPlaceId": "ramanathaswamy" }
+          ]
+        }
+      ]
+    }
+  ]
+}

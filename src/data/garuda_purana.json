@@ -1,0 +1,87 @@
+{
+  "id": "garuda_purana",
+  "book": "Garuda Purana",
+  "centerCoordinates": {
+    "lat": 25.0,
+    "lng": 83.0
+  },
+  "defaultZoom": 5,
+  "places": [
+    {
+      "id": "gaya_garuda",
+      "name": "Gaya \u2014 Liberation of Ancestors",
+      "storyRegion": "Sacred of the Dead",
+      "coordinates": {
+        "lat": 24.7914,
+        "lng": 84.9994
+      },
+      "importance": 1,
+      "modernName": "Gaya, Bihar",
+      "modernInfo": "The Garuda Purana is read after a Hindu dies. Gaya is where Pind Daan (ancestral rites) frees the souls of the dead. The Phalgu river runs here.",
+      "modernMapUrl": "https://maps.google.com/?q=Gaya,Bihar",
+      "subPlaces": [
+        {
+          "id": "falgu_bank",
+          "name": "Falgu River Bank",
+          "coordinates": {
+            "lat": 24.785,
+            "lng": 84.998
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "garuda_s1",
+              "sceneNumber": 1,
+              "title": "Garuda asks Vishnu about death",
+              "description": "The Garuda Purana is Vishnu's answer to Garuda's question: 'What happens after death?' Vishnu describes the 13 days of a soul's journey, the review of karma, and the paths to liberation or rebirth.",
+              "image": "/images/garuda_purana/garuda_vishnu.jpg",
+              "subPlaceId": "falgu_bank"
+            },
+            {
+              "id": "garuda_s2",
+              "sceneNumber": 2,
+              "title": "Pind Daan frees ancestors",
+              "description": "In Gaya, the act of offering pind (rice balls) to ancestors can free up to 21 generations of one's lineage from the cycle of rebirth. The Garuda Purana says Gaya has the power to liberate even the worst sinners if their descendants perform this rite.",
+              "image": "/images/garuda_purana/gaya_pind_daan.jpg",
+              "subPlaceId": "falgu_bank"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prayagraj_garuda",
+      "name": "Prayagraj \u2014 Triveni Sangam",
+      "storyRegion": "Three Rivers Meet",
+      "coordinates": {
+        "lat": 25.4358,
+        "lng": 81.8463
+      },
+      "importance": 1,
+      "modernName": "Prayagraj, Uttar Pradesh",
+      "modernInfo": "The confluence of Ganga, Yamuna and the invisible Saraswati. Kumbh Mela held every 12 years \u2014 largest human gathering on Earth.",
+      "modernMapUrl": "https://maps.google.com/?q=Triveni+Sangam,Prayagraj",
+      "subPlaces": [
+        {
+          "id": "sangam",
+          "name": "Triveni Sangam",
+          "coordinates": {
+            "lat": 25.4233,
+            "lng": 81.884
+          },
+          "importance": 2,
+          "scenes": [
+            {
+              "id": "prayag_s1",
+              "sceneNumber": 1,
+              "title": "The Kumbh Mela \u2014 nectar in the water",
+              "description": "The Garuda Purana explains that on Kumbh Mela days, the waters of the Sangam become amrita (nectar) due to the alignment of Jupiter, Sun and Moon. Bathing then dissolves all karma accumulated over lifetimes.",
+              "image": "/images/garuda_purana/kumbh_mela.jpg",
+              "subPlaceId": "sangam"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
