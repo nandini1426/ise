@@ -3,6 +3,7 @@ import { GoogleMap, useJsApiLoader, OverlayView, Polygon } from '@react-google-m
 import SceneCard from '../StoryMap/SceneCard';
 import { T } from '../../data/translations';
 import { tp, tr } from '../../data/place_translations';
+import { useJourneyAnimation, PlayButton, JourneyPopup } from './JourneyAnimation';
 import './MapView.css';
 
 const LIBRARIES = ['places'];
@@ -91,6 +92,7 @@ function MapView({ book, onPlaceClick, onBack, language = 'en' }) {
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [activeSceneIndex, setActiveSceneIndex] = useState(0);
   const mapRef = useRef(null);
+  const t = T[language] || T.en;
 
   const { isLoaded, loadError } = useJsApiLoader({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_KEY || '',
@@ -128,6 +130,9 @@ function MapView({ book, onPlaceClick, onBack, language = 'en' }) {
     if (mapRef.current) { mapRef.current.panTo(book.centerCoordinates); mapRef.current.setZoom(book.defaultZoom||5); }
   }, [book]);
 
+  const { isPlaying, activePopup, hasJourney, startAnimation, stopAnimation } =
+    useJourneyAnimation({ book, mapRef, language });
+
   if (loadError) return <div className="mv-loading"><div className="mv-loading-content"><span>⚠️</span><p>Maps failed. Check API key in .env</p><button onClick={onBack}>← Back</button></div></div>;
   if (!isLoaded) return <div className="mv-loading"><div className="mv-loading-content"><span className="mv-loading-icon">🗺️</span><p>Unrolling the ancient map…</p></div></div>;
 
@@ -135,15 +140,19 @@ function MapView({ book, onPlaceClick, onBack, language = 'en' }) {
     <div className="map-view">
       <div className="mv-topbar">
         <div className="mv-topbar-left">
-          <button className="mv-back-btn" onClick={onBack}>← Back</button>
-          <div className="mv-logo-small">🗺️ StoryMaps</div>
+          <button className="mv-back-btn" onClick={onBack}>{t.back}</button>
+          <div className="mv-logo-small">🗺️ {t.appName}</div>
           <span className="mv-bc-sep">›</span>
           <span className="mv-bc-book">{book.book}</span>
         </div>
         <div className="mv-topbar-right">
-          <span className={`mv-zoom-tag ${zoom>=7?'active':''}`}>{zoom>=7?'All places visible':'Zoom in to see more'}</span>
-          <span className="mv-legend-item"><span className="mv-legend-dot major"/>Major</span>
-          <span className="mv-legend-item"><span className="mv-legend-dot minor"/>Minor</span>
+          <PlayButton
+            onClick={startAnimation} onStop={stopAnimation}
+            isPlaying={isPlaying} language={language} hasJourney={hasJourney}
+          />
+          <span className={`mv-zoom-tag ${zoom>=7?'active':''}`}>{zoom>=7?t.allVisible:t.zoomIn}</span>
+          <span className="mv-legend-item"><span className="mv-legend-dot major"/>{t.majorLabel}</span>
+          <span className="mv-legend-item"><span className="mv-legend-dot minor"/>{t.minorLabel}</span>
         </div>
       </div>
 
@@ -169,6 +178,11 @@ function MapView({ book, onPlaceClick, onBack, language = 'en' }) {
               onHover={setHoveredPlace} onLeave={() => setHoveredPlace(null)}
               onClick={handleNodeClick} language={language} />
           ))}
+
+          {/* Journey popup */}
+          {activePopup && (
+            <JourneyPopup place={activePopup.place} note={activePopup.note} language={language} />
+          )}
 
           {hoveredPlace && !selectedPlace && (
             <HoverCard place={hoveredPlace} onLeave={() => setHoveredPlace(null)} onClick={() => handleNodeClick(hoveredPlace)} language={language} />

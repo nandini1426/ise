@@ -42,7 +42,7 @@
 
 /* ── Map Area — 38% ── */
 .sm-map-area {
-  flex: 0 0 38%; position: relative; overflow: hidden;
+  flex: 0 0 50%; position: relative; overflow: hidden;
 }
 .sm-region-badge {
   position: absolute; top: 10px; left: 10px; z-index: 5;
@@ -117,7 +117,7 @@
 .scene-card {
   flex: 1; background: rgba(255,255,255,0.04);
   border: 1px solid rgba(239,159,39,0.2); border-radius: 16px;
-  overflow: hidden; display: flex; flex-direction: column;
+  overflow: hidden; display: flex; flex-direction: row;
   cursor: default; min-height: 0;
 }
 .scene-card.active {
@@ -128,9 +128,10 @@
 
 /* Image area — top */
 .sc-image-area {
-  height: 220px; position: relative; flex-shrink: 0; overflow: hidden;
-  background: #0e0b1a;
+ width: 350px; min-width: 300px; position: relative;
+  overflow: hidden; background: #0e0b1a;
   display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
 }
 .sc-img {
   max-width: 100%; max-height: 100%;
