@@ -239,14 +239,11 @@ function MapView({ book, onPlaceClick, onBack, language = 'en' }) {
           <div className="mv-sheet-scenes">
             {selectedScenes.map((scene, i) => (
               <SceneCard key={scene.id} scene={scene} index={i}
-                isActive={i === activeSceneIndex}
-                onClick={() => setActiveSceneIndex(i)}
-                onDoubleClick={() => onPlaceClick(selectedPlace)}
-                language={language} />
+                isActive={i === activeSceneIndex} onClick={() => setActiveSceneIndex(i)} language={language} />
             ))}
           </div>
           <div className="mv-sheet-actions">
-            <div className="mv-dbl-hint">⚡ Double-tap any card to explore full story</div>
+            <button className="mv-btn-story" onClick={() => onPlaceClick(selectedPlace)}>Explore Full Story Map →</button>
             <button className="mv-btn-visit" onClick={() => { const u = selectedPlace.modernMapUrl||selectedPlace.mapsUrl; if(u) window.open(u,'_blank'); }}>🗺️ Visit Today</button>
           </div>
         </>)}

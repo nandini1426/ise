@@ -17,7 +17,7 @@ function getVoice(targetLang) {
   );
 }
 
-function SceneCard({ scene, index, isActive, onClick, onDoubleClick, language = 'en' }) {
+function SceneCard({ scene, index, isActive, onClick, language = 'en' }) {
   const [imgError, setImgError]         = useState(false);
   const [speaking, setSpeaking]         = useState(false);
   const [translating, setTranslating]   = useState(false);
@@ -80,7 +80,7 @@ function SceneCard({ scene, index, isActive, onClick, onDoubleClick, language = 
   };
 
   return (
-    <div className={`scene-card ${isActive ? 'active' : ''}`} onClick={onClick} onDoubleClick={onDoubleClick}>
+    <div className={`scene-card ${isActive ? 'active' : ''}`} onClick={onClick}>
       {/* Image */}
       <div className="sc-image-area">
         {showPlaceholder ? (
