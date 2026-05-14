@@ -128,10 +128,15 @@
 
 /* Image area — top */
 .sc-image-area {
-  height: 130px; position: relative; flex-shrink: 0; overflow: hidden;
-  background: #1a1230;
+  height: 220px; position: relative; flex-shrink: 0; overflow: hidden;
+  background: #0e0b1a;
+  display: flex; align-items: center; justify-content: center;
 }
-.sc-img { width: 100%; height: 100%; object-fit: cover; }
+.sc-img {
+  max-width: 100%; max-height: 100%;
+  width: auto; height: auto;
+  object-fit: contain;
+}
 .sc-placeholder {
   width: 100%; height: 100%;
   display: flex; align-items: center; justify-content: center;
@@ -152,16 +157,14 @@
 
 /* Text body */
 .sc-body {
-  flex: 1; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; min-height: 0;
+  flex: 0 0 auto; padding: 6px 12px 8px; display: flex; flex-direction: column; gap: 3px;
 }
 .sc-title {
-  font-size: 15px; font-weight: 700; color: var(--gold-primary);
-  line-height: 1.3; flex-shrink: 0;
+  font-size: 13px; font-weight: 700; color: var(--gold-primary); line-height: 1.2; flex-shrink: 0;
 }
 .sc-desc {
-  font-size: 12px; color: rgba(255,255,255,0.65); line-height: 1.6;
-  flex: 1; overflow: hidden;
-  display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;
+  font-size: 13px; color: rgba(255,255,255,0.6); line-height: 1.4;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
 
 /* Voice button */
