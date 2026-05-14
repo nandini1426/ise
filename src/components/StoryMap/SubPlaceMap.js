@@ -1,92 +1,55 @@
-import React, { useMemo, useState } from 'react';
-import { GoogleMap, OverlayView, useJsApiLoader } from '@react-google-maps/api';
+import React, { useState } from 'react';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import L from 'leaflet';
+import 'leaflet/dist/leaflet.css';
 
-const LIBRARIES = ['places'];
+// ESRI World Shaded Relief — terrain shading, max zoom 13, zero labels
+const RELIEF_TILES = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}';
 
-const SUBMAP_STYLES = [
-  { elementType: 'geometry', stylers: [{ color: '#1a2744' }] },
-  { elementType: 'labels.text.fill', stylers: [{ color: '#a0b4cc' }] },
-  { elementType: 'labels.text.stroke', stylers: [{ color: '#1a2744' }] },
-  { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#0a1528' }] },
-  { featureType: 'landscape.natural', elementType: 'geometry', stylers: [{ color: '#1e3040' }] },
-  { featureType: 'road', stylers: [{ visibility: 'off' }] },
-  { featureType: 'transit', stylers: [{ visibility: 'off' }] },
-  { featureType: 'poi', stylers: [{ visibility: 'off' }] },
-  { featureType: 'administrative', elementType: 'geometry.stroke', stylers: [{ color: '#3a5068' }] },
-  { featureType: 'administrative.locality', elementType: 'labels', stylers: [{ visibility: 'simplified' }] },
-];
+const getOffset = (w, h) => ({ x: -(w / 2), y: -(h / 2) });
 
-const getThumbnailOffset = (w, h) => ({ x: -(w / 2), y: -(h / 2) });
-
-function SubPlaceNode({ subPlace, isActive }) {
-  const thumbSrc = subPlace.scenes?.[0]?.image || null;
-  const [imgError, setImgError] = useState(false);
-  const showThumb = thumbSrc && !imgError;
-
-  return (
-    <OverlayView
-      position={subPlace.coordinates}
-      mapPaneName={OverlayView.OVERLAY_MOUSE_TARGET}
-      getPixelPositionOffset={getThumbnailOffset}
-    >
-      <div className={`subplace-node ${isActive ? 'active' : ''}`}>
-        {isActive && <div className="spn-glow-ring" />}
-
-        {showThumb ? (
-          <img
-            src={thumbSrc}
-            alt={subPlace.name}
-            className="spn-thumbnail"
-            onError={() => setImgError(true)}
-          />
-        ) : (
-          <div className="spn-dot-fallback" />
-        )}
-
-        <div className="spn-label">{subPlace.name}</div>
-      </div>
-    </OverlayView>
-  );
+function subPlaceIcon(sp, isActive) {
+  const thumbSrc = sp.scenes?.[0]?.image;
+  const inner = thumbSrc
+    ? `<img src="${thumbSrc}" class="spn-thumb-img" onerror="this.parentElement.innerHTML='<div class=\\'spn-dot-fb\\'></div>'" />`
+    : `<div class="spn-dot-fb"></div>`;
+  return L.divIcon({
+    html: `<div class="spn-wrapper ${isActive ? 'spn-active' : ''}">
+      ${isActive ? '<div class="spn-glow"></div>' : ''}
+      ${inner}
+      <div class="spn-lbl">${sp.name}</div>
+    </div>`,
+    className: '',
+    iconSize: [40, 40],
+    iconAnchor: [20, 20],
+  });
 }
 
 function SubPlaceMap({ place, activeSubPlaceId }) {
-  const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_KEY || '',
-    libraries: LIBRARIES,
-  });
-
-  const center = useMemo(() => place.coordinates, [place.coordinates]);
-
-  if (!isLoaded) {
-    return (
-      <div className="spm-loading">
-        <span>🗺️</span>
-      </div>
-    );
-  }
-
   return (
-    <GoogleMap
-      mapContainerStyle={{ width: '100%', height: '100%' }}
-      center={center}
-      zoom={14}
-      options={{
-        styles: SUBMAP_STYLES,
-        disableDefaultUI: true,
-        gestureHandling: 'none',
-        draggable: false,
-        zoomControl: false,
-        scrollwheel: false,
-      }}
+    <MapContainer
+      center={[place.coordinates.lat, place.coordinates.lng]}
+      zoom={13}
+      style={{ width: '100%', height: '100%' }}
+      zoomControl={false}
+      attributionControl={false}
+      dragging={false}
+      scrollWheelZoom={false}
+      doubleClickZoom={false}
+      touchZoom={false}
+      keyboard={false}
     >
-      {place.subPlaces?.map((sp) => (
-        <SubPlaceNode
+      <TileLayer url={RELIEF_TILES} maxZoom={13} />
+
+      {place.subPlaces?.map(sp => (
+        <Marker
           key={sp.id}
-          subPlace={sp}
-          isActive={sp.id === activeSubPlaceId}
+          position={[sp.coordinates.lat, sp.coordinates.lng]}
+          icon={subPlaceIcon(sp, sp.id === activeSubPlaceId)}
+          interactive={false}
         />
       ))}
-    </GoogleMap>
+    </MapContainer>
   );
 }
 
