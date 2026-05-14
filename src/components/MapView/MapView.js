@@ -1,6 +1,8 @@
 import React, { useState, useRef, useCallback, useMemo } from 'react';
 import { GoogleMap, useJsApiLoader, OverlayView, Polygon } from '@react-google-maps/api';
 import SceneCard from '../StoryMap/SceneCard';
+import { T } from '../../data/translations';
+import { tp, tr } from '../../data/place_translations';
 import './MapView.css';
 
 const LIBRARIES = ['places'];
@@ -42,15 +44,15 @@ const STORY_REGIONS = {
 
 const getOffset = (w, h) => ({ x: -(w / 2), y: -(h / 2) });
 
-function RegionLabel({ region }) {
+function RegionLabel({ region, language }) {
   return (
     <OverlayView position={region.center} mapPaneName={OverlayView.OVERLAY_LAYER} getPixelPositionOffset={getOffset}>
-      <div className="region-label-text">{region.name}</div>
+      <div className="region-label-text">{tr(region.name, language)}</div>
     </OverlayView>
   );
 }
 
-function StoryNodeMarker({ place, isActive, onHover, onLeave, onClick }) {
+function StoryNodeMarker({ place, isActive, onHover, onLeave, onClick, language }) {
   const isMajor = place.importance === 1;
   const size = isMajor ? 20 : 12;
   return (
@@ -60,23 +62,24 @@ function StoryNodeMarker({ place, isActive, onHover, onLeave, onClick }) {
         onMouseEnter={() => onHover(place)} onMouseLeave={onLeave} onClick={() => onClick(place)}>
         {isActive && <div className="lf-glow" />}
         <div className="lf-dot" />
-        {isMajor && <div className="lf-label">{place.name}</div>}
+        {isMajor && <div className="lf-label">{tp(place.name, language)}</div>}
       </div>
     </OverlayView>
   );
 }
 
-function HoverCard({ place, onLeave, onClick }) {
+function HoverCard({ place, onLeave, onClick, language }) {
+  const t = T[language] || T.en;
   return (
     <OverlayView position={place.coordinates} mapPaneName={OverlayView.FLOAT_PANE}
       getPixelPositionOffset={(w) => ({ x: -(w/2), y: -130 })}>
       <div className="hover-tooltip" onMouseLeave={onLeave} onClick={onClick}>
-        <div className="ht-story-name">{place.name}</div>
+        <div className="ht-story-name">{tp(place.name, language)}</div>
         <div className="ht-divider" />
-        <div className="ht-modern-label">📍 Modern Location</div>
+        <div className="ht-modern-label">{t.modernLocation}</div>
         <div className="ht-modern-name">{place.modernName}</div>
         {place.modernInfo && <div className="ht-modern-info">{place.modernInfo}</div>}
-        <div className="ht-cta">tap to explore →</div>
+        <div className="ht-cta">{t.tapHint.split(' ').slice(-3).join(' ')}</div>
       </div>
     </OverlayView>
   );
@@ -158,17 +161,17 @@ function MapView({ book, onPlaceClick, onBack, language = 'en' }) {
             <Polygon key={r.name} paths={r.bounds}
               options={{ strokeColor: r.color, strokeWeight: 2, strokeOpacity: 0.7, fillColor: r.color, fillOpacity: 0.15, strokeDashArray: '8 5' }} />
           ))}
-          {regions.map(r => <RegionLabel key={`lbl-${r.name}`} region={r} />)}
+          {regions.map(r => <RegionLabel key={`lbl-${r.name}`} region={r} language={language} />)}
 
           {book.places.filter(shouldShowNode).map(place => (
             <StoryNodeMarker key={place.id} place={place}
               isActive={selectedPlace?.id === place.id}
               onHover={setHoveredPlace} onLeave={() => setHoveredPlace(null)}
-              onClick={handleNodeClick} />
+              onClick={handleNodeClick} language={language} />
           ))}
 
           {hoveredPlace && !selectedPlace && (
-            <HoverCard place={hoveredPlace} onLeave={() => setHoveredPlace(null)} onClick={() => handleNodeClick(hoveredPlace)} />
+            <HoverCard place={hoveredPlace} onLeave={() => setHoveredPlace(null)} onClick={() => handleNodeClick(hoveredPlace)} language={language} />
           )}
         </GoogleMap>
         {!selectedPlace && <div className="mv-hint">Tap a glowing node to explore its story</div>}
@@ -179,8 +182,8 @@ function MapView({ book, onPlaceClick, onBack, language = 'en' }) {
           <div className="mv-sheet-handle-row" onClick={handleCloseSheet}><div className="mv-sheet-handle" /></div>
           <div className="mv-sheet-header">
             <div className="mv-sheet-header-left">
-              <h2 className="mv-sheet-title">{selectedPlace.name}</h2>
-              <div className="mv-sheet-region">🏰 {selectedPlace.storyRegion}</div>
+              <h2 className="mv-sheet-title">{tp(selectedPlace.name, language)}</h2>
+              <div className="mv-sheet-region">🏰 {tr(selectedPlace.storyRegion, language)}</div>
             </div>
             <div className="mv-sheet-header-right">
               <div className="mv-sheet-modern-tag">📍 {selectedPlace.modernName}</div>

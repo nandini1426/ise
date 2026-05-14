@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import { CATEGORIES, BOOK_META } from '../../data/catalog';
+import { T, BOOK_TITLES } from '../../data/translations';
 import './BookSelector.css';
 
-function BookCard({ bookId, meta, isAvailable, onSelect }) {
+function BookCard({ bookId, meta, isAvailable, onSelect, language }) {
+  const t = T[language] || T.en;
+  const bt = (BOOK_TITLES[language] || BOOK_TITLES.en)[bookId];
+  const title   = bt?.title   || meta.title;
+  const tagline = bt?.tagline || meta.tagline;
+
   return (
     <button
       className={`bs-card ${!isAvailable ? 'bs-card-locked' : ''}`}
@@ -14,38 +20,45 @@ function BookCard({ bookId, meta, isAvailable, onSelect }) {
         {meta.icon}
       </div>
       <div className="bs-card-body">
-        <div className="bs-card-title">{meta.title}</div>
-        {meta.author && <div className="bs-card-author">by {meta.author}</div>}
-        <div className="bs-card-tagline">{meta.tagline}</div>
+        <div className="bs-card-title">{title}</div>
+        {meta.author && <div className="bs-card-author">{t.byAuthor} {meta.author}</div>}
+        <div className="bs-card-tagline">{tagline}</div>
         {meta.yuga && <div className="bs-card-yuga">{meta.yuga}</div>}
       </div>
       <div className="bs-card-end">
         {isAvailable
           ? <span className="bs-arrow">→</span>
-          : <span className="bs-coming-soon">Soon</span>
+          : <span className="bs-coming-soon">{t.comingSoon}</span>
         }
       </div>
     </button>
   );
 }
 
-function BookSelector({ booksData, onBookSelect }) {
+function BookSelector({ booksData, onBookSelect, language = 'en' }) {
   const [expandedCategory, setExpandedCategory] = useState('itihasas');
+  const t = T[language] || T.en;
+
+  const CATEGORY_LABELS = {
+    itihasas: { label: t.itihasasLabel, subtitle: t.itihasasSub },
+    puranas:  { label: t.puranasLabel,  subtitle: t.puranasSub  },
+  };
+
+  const RELIGION_KEYS = ['religion_buddhism','religion_jainism','religion_bible','religion_quran','religion_torah','religion_vedas'];
 
   return (
     <div className="book-selector">
-      {/* Header */}
       <div className="bs-header">
         <span className="bs-logo-icon">🗺️</span>
-        <h1 className="bs-logo-name">StoryMaps</h1>
-        <p className="bs-subtitle">Explore ancient scriptures through the places where they happened</p>
+        <h1 className="bs-logo-name">{t.appName}</h1>
+        <p className="bs-subtitle">{t.tagline}</p>
       </div>
 
-      {/* Categories */}
       <div className="bs-body">
         {CATEGORIES.map(cat => {
           const isExpanded = expandedCategory === cat.id;
           const availableCount = cat.books.filter(id => BOOK_META[id]?.available).length;
+          const cl = CATEGORY_LABELS[cat.id] || { label: cat.label, subtitle: cat.subtitle };
 
           return (
             <div key={cat.id} className="bs-category">
@@ -54,11 +67,11 @@ function BookSelector({ booksData, onBookSelect }) {
                 onClick={() => setExpandedCategory(isExpanded ? null : cat.id)}
               >
                 <div className="bs-cat-info">
-                  <span className="bs-cat-label">{cat.label}</span>
-                  <span className="bs-cat-subtitle">{cat.subtitle}</span>
+                  <span className="bs-cat-label">{cl.label}</span>
+                  <span className="bs-cat-subtitle">{cl.subtitle}</span>
                 </div>
                 <div className="bs-cat-meta">
-                  <span className="bs-cat-count">{availableCount} available</span>
+                  <span className="bs-cat-count">{availableCount} {t.available}</span>
                   <span className="bs-cat-chevron">{isExpanded ? '▲' : '▼'}</span>
                 </div>
               </button>
@@ -69,13 +82,9 @@ function BookSelector({ booksData, onBookSelect }) {
                     const meta = BOOK_META[bookId];
                     if (!meta) return null;
                     return (
-                      <BookCard
-                        key={bookId}
-                        bookId={bookId}
-                        meta={meta}
+                      <BookCard key={bookId} bookId={bookId} meta={meta}
                         isAvailable={!!booksData[bookId]}
-                        onSelect={onBookSelect}
-                      />
+                        onSelect={onBookSelect} language={language} />
                     );
                   })}
                 </div>
@@ -84,23 +93,15 @@ function BookSelector({ booksData, onBookSelect }) {
           );
         })}
 
-        {/* Future religions teaser */}
         <div className="bs-future">
-          <div className="bs-future-title">Coming Later</div>
+          <div className="bs-future-title">{t.comingLater}</div>
           <div className="bs-future-chips">
-            <span>☸️ Buddhism</span>
-            <span>🕉️ Jainism</span>
-            <span>✝️ Bible</span>
-            <span>☪️ Quran</span>
-            <span>✡️ Torah</span>
-            <span>🌿 Vedas</span>
+            {RELIGION_KEYS.map(k => <span key={k}>{t[k]}</span>)}
           </div>
         </div>
       </div>
 
-      <div className="bs-footer">
-        Navigate the map → Tap a node → Explore the story
-      </div>
+      <div className="bs-footer">{t.navHint}</div>
     </div>
   );
 }

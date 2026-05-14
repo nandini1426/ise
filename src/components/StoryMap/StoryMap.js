@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import SubPlaceMap from './SubPlaceMap';
 import SceneStrip from './SceneStrip';
 import { T } from '../../data/translations';
+import { tp, tr } from '../../data/place_translations';
 import './StoryMap.css';
 
 function StoryMap({ place, bookName, onBack, language = 'en' }) {
@@ -33,7 +34,7 @@ function StoryMap({ place, bookName, onBack, language = 'en' }) {
         <div className="sm-breadcrumb">
           <span className="sm-bc-book">{bookName}</span>
           <span className="sm-bc-sep">›</span>
-          <span className="sm-bc-place">{place.name}</span>
+          <span className="sm-bc-place">{tp(place.name, language)}</span>
         </div>
         <div className="sm-modern-tag">{t.modernLocation} {place.modernName?.split(',')[0]}</div>
       </div>
@@ -41,7 +42,7 @@ function StoryMap({ place, bookName, onBack, language = 'en' }) {
       {/* Map — 40% */}
       <div className="sm-map-area">
         <SubPlaceMap place={place} activeSubPlaceId={activeSubPlaceId} />
-        <div className="sm-region-badge">🏰 {place.storyRegion}</div>
+        <div className="sm-region-badge">🏰 {tr(place.storyRegion, language)}</div>
       </div>
 
       {/* Scene — 60% */}

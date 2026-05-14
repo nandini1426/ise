@@ -1,65 +1,55 @@
-// Translation cache — avoids repeat API calls within the session
 const cache = {};
 
-const LANG_NAMES = { hi: 'Hindi', te: 'Telugu' };
-
-/**
- * Translate a scene's title + description via Anthropic API.
- * Returns the scene with translated fields, or original on error.
- */
 export async function translateScene(scene, targetLang) {
   if (!targetLang || targetLang === 'en') return scene;
-
   const cacheKey = `${scene.id}_${targetLang}`;
   if (cache[cacheKey]) return cache[cacheKey];
 
-  const langName = LANG_NAMES[targetLang] || targetLang;
+  const langName = targetLang === 'hi' ? 'Hindi' : 'Telugu';
+  const encode = encodeURIComponent;
+
+  // Try LibreTranslate (free, open-source, CORS-enabled)
+  const libreUrl = 'https://libretranslate.com/translate';
+  // Fallback: MyMemory
+  const mmUrl = (text) =>
+    `https://api.mymemory.translated.net/get?q=${encode(text)}&langpair=en|${targetLang}`;
+
+  const tryTranslate = async (text) => {
+    // Method 1: MyMemory GET (most reliable from browser)
+    try {
+      const r = await fetch(mmUrl(text), { signal: AbortSignal.timeout(5000) });
+      if (r.ok) {
+        const d = await r.json();
+        const t = d?.responseData?.translatedText;
+        if (t && t !== text && d?.responseStatus === 200) return t;
+      }
+    } catch {}
+
+    // Method 2: Google unofficial (no key needed)
+    try {
+      const r = await fetch(
+        `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=${targetLang}&dt=t&q=${encode(text)}`,
+        { signal: AbortSignal.timeout(5000) }
+      );
+      if (r.ok) {
+        const d = await r.json();
+        const t = d?.[0]?.map(x => x?.[0]).filter(Boolean).join('');
+        if (t && t !== text) return t;
+      }
+    } catch {}
+
+    return text; // fallback to English
+  };
 
   try {
-    const response = await fetch('https://api.anthropic.com/v1/messages', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        model: 'claude-sonnet-4-20250514',
-        max_tokens: 600,
-        messages: [{
-          role: 'user',
-          content: `Translate the following two texts to ${langName}.
-Return ONLY a valid JSON object with keys "title" and "description". 
-No markdown, no backticks, no explanation.
-
-Title: ${scene.title}
-Description: ${scene.description}`,
-        }],
-      }),
-    });
-
-    const data = await response.json();
-    const raw = data.content?.[0]?.text?.trim() || '';
-
-    // Strip any accidental markdown fences
-    const clean = raw.replace(/^```[a-z]*\n?/, '').replace(/\n?```$/, '').trim();
-    const parsed = JSON.parse(clean);
-
-    const result = {
-      ...scene,
-      title: parsed.title || scene.title,
-      description: parsed.description || scene.description,
-    };
+    const [title, description] = await Promise.all([
+      tryTranslate(scene.title),
+      tryTranslate(scene.description),
+    ]);
+    const result = { ...scene, title, description };
     cache[cacheKey] = result;
     return result;
   } catch {
-    // Fallback: return English original
     return scene;
   }
-}
-
-/** Pre-translate all scenes of a place in the background */
-export async function preFetchTranslations(allScenes, targetLang) {
-  if (targetLang === 'en') return;
-  // translate first 3 immediately, rest in background
-  const priority = allScenes.slice(0, 3);
-  const rest = allScenes.slice(3);
-  await Promise.all(priority.map(s => translateScene(s, targetLang)));
-  rest.forEach(s => translateScene(s, targetLang)); // fire-and-forget
 }
